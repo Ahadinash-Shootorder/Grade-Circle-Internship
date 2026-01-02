@@ -124,7 +124,7 @@ export const Hero = () => {
 
         {/* Form Background Image - Full Width */}
         <img
-          className="absolute left-0 right-0 w-full h-[600px] z-0"
+          className="absolute left-0 right-0 w-full h-[620px] z-0"
           alt="Form Background"
           src="/Rectangle 57.png"
           style={{ top: '68%', transform: 'translateY(-50%)' }}
