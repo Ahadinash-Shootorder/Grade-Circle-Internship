@@ -129,7 +129,7 @@ export const RealStories = () => {
           {/* Testimonial Card */}
           <div className="relative overflow-hidden">
             {/* Quote Mark - Fixed position for all cards */}
-            <div className="absolute -top-5 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-50">
+            <div className="absolute -top-5 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-40">
               <span className="text-[#ef7f1a] h-[100%] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none">
                 “
               </span>
