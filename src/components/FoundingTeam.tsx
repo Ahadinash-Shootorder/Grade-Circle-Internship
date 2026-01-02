@@ -112,38 +112,32 @@ export const FoundingTeam = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block">
-        <p className="absolute top-[6189px] left-[525px] w-[293px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
-          Founding Team
-        </p>
+      <div className="hidden lg:block w-full py-8 bg-[#f7f7f7] relative top-[2220px]">
+        <div className="max-w-[1340px] mx-auto px-[50px]">
+          <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center ">
+            Founding Team
+          </h2>
 
-        <div className="absolute top-[6450px] left-[50px] w-[1340px] h-[290px] bg-[#f7f7f7] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-        <div className="absolute top-[6567px] left-20 w-[1182px] h-[113px] bg-[#f7f7f7] shadow-[0px_-1px_1px_#00000040]" />
-
-        <div className="absolute top-[6590px] left-[105px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal] whitespace-nowrap">
-          Prashant Tibrewal
+          <div className="flex justify-center gap-16">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="text-center">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-[358px] h-[358px] object-cover mb-6"
+                />
+                <div className="bg-[#f7f7f7] rounded-[10px] shadow-md p-6">
+                  <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-xl mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="[font-family:'Inter',Helvetica] font-normal text-black text-xl">
+                    {member.title}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <p className="absolute top-[6624px] left-[74px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
-          MIT (USA) Alum &amp;<br />Experience Career Coach
-        </p>
-
-        <div className="absolute top-[6590px] left-[545px] w-[178px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal]">
-          Aditi Arya Kotak
-        </div>
-        <p className="absolute top-[6624px] left-[523px] w-[223px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
-          Yale University Alum<br />&amp; Miss India 2015
-        </p>
-
-        <div className="absolute top-[6590px] left-[1011px] w-[178px] [font-family:'Inter',Helvetica] font-bold text-black text-xl text-center tracking-[0] leading-[normal]">
-          Neelabh Prabhat
-        </div>
-        <div className="absolute top-[6624px] left-[990px] w-[223px] [font-family:'Inter',Helvetica] font-normal text-black text-xl text-center tracking-[0] leading-[normal]">
-          IIT Delhi Alum &amp;<br />Ex-Citibank
-        </div>
-
-        <img className="absolute top-[6211px] left-[27px] w-[358px] h-[358px] object-cover" alt="Prashant tibrewal" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/prashant-tibrewal.png" />
-        <img className="absolute top-[6210px] left-[491px] w-[358px] h-[358px] object-cover" alt="Aditi arya kotak" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/aditi-arya-kotak.png" />
-        <img className="absolute top-[6210px] left-[897px] w-[358px] h-[358px] object-cover" alt="Neelabh prabhat" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/neelabh-prabhat.png" />
       </div>
     </>
   );
