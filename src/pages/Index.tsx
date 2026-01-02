@@ -39,7 +39,7 @@ const Index = () => {
 
       <div className="relative min-h-screen w-full  overflow-x-hidden">
       
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <FoundedByAlumni />
         <ProgramOverview />
