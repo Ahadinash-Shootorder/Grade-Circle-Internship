@@ -46,7 +46,7 @@ const Index = () => {
         <CareerStreams />
         <Testimonials />
         <ProgramStructure />
-        {/* <StudentExperiences /> */}
+        <StudentExperiences />
         <ProgramDeliverables />
         <FoundingTeam />
         <RealStories />
