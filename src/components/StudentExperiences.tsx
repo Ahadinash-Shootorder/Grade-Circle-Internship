@@ -30,26 +30,24 @@ export const StudentExperiences = () => {
       </section>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block">
-        <img
-          className="absolute top-[4578px] left-[215px] w-[960px] h-[540px] object-cover"
-          alt="Rectangle"
-          src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-44.png"
-        />
-
-        <div className="absolute top-[4529px] left-[50px] w-[1340px] h-[631px] rounded-[20px] border border-solid border-[#122e6c]" />
-
-        <div className="absolute top-[4497px] left-[457px] w-[536px] h-[59px] bg-white" />
-
-        <div className="absolute top-[4497px] left-[484px] [font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center tracking-[0] leading-[normal]">
-          Student Experiences
+      <div className="hidden lg:block py-16 relative top-[2300px]">
+        <div className="max-w-[1340px] mx-auto px-[50px]">
+          <div className="relative border border-solid border-[#122e6c] rounded-[20px] p-10">
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white px-8">
+              <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center">
+                Student Experiences
+              </h2>
+            </div>
+            
+            <div className="flex justify-center pt-8">
+              <img
+                className="w-[960px] h-[540px] object-cover rounded-lg"
+                alt="Student Experiences"
+                src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-44.png"
+              />
+            </div>
+          </div>
         </div>
-
-        <img
-          className="absolute top-[10058px] left-[166px] w-[542px] h-[413px]"
-          alt="Image"
-          src="https://c.animaapp.com/mjmwrwbp4K97wU/img/image-6-1.png"
-        />
       </div>
     </>
   );
