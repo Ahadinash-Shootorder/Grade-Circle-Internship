@@ -26,6 +26,9 @@ export default defineConfig(({ mode }) => ({
     emptyOutDir: true,
     sourcemap: false,
   },
+  
+  // 👇 Use subdirectory base path for cPanel hosting
+  base: "/gradecircle/",
 }));
 
 
