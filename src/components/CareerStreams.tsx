@@ -169,36 +169,28 @@ export const CareerStreams = () => {
       100+ Mentors | 20+ Career Pathways
     </p>
   </div>
+  
+  <div className="relative mx-auto w-full max-w-[745px] translate-y-16 border border-[#ef7f1a] rounded-[20px] p-10 bg-white">
+
+  <img
+    src="./Blue_quote.jpg"
+    alt="quote"
+    className="absolute -top-6 -left-6 w-[60px] h-[60px]"
+  />
+
+  <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
+    We were pushed to go into every detail. The accountability and depth
+    made it stand out from any school project
+  </p>
+
+  <p className="text-[#122e6c] text-xl">
+    <span className="font-bold">– Riva,</span>{" "}
+    <span className="text-black">Kanakia International School, Mumbai</span>
+  </p>
+</div>
 </div>
 
 
-{/* ================== QUOTE SECTION ================== */}
-<div className="flex justify-center w-full py-23 pt-20 bg-white relative">
-
-  <div className="relative w-[1440px]">
-
-    {/* <div className="absolute left-[30px] -top-[270px] w-[127px] h-40 bg-[#f7f7f7] z-10" /> */}
-
-    <img
-  src="./Blue_quote.jpg"
-  alt="quote"
-  className="absolute left-[26px] top-[-250px] w-[60px] h-[60px] z-20"
-/>
-
-
-    <div className="absolute top-[-230px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-[#122e6c]" />
-
-    <p className="absolute top-[-205px] left-[188px] w-[1148px] text-4xl leading-normal">
-      <span className="font-semibold italic text-[#f36a1e]">
-        Instead of just theory, we worked on realistic case studies,<br />
-        applying our learnings like in real life.{" "}
-      </span>
-      <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
-      <span className="text-black text-2xl"> Prometheus School, Noida</span>
-    </p>
-
-  </div>
-</div>
 
   </div>
 </div>
