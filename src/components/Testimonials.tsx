@@ -87,8 +87,8 @@ export const Testimonials = () => {
         {/* <div className="top-[2900px] left-[26px] w-[140px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
         </div> */}
-        <div className="absolute top-[7422px] left-[47px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
-        <p className="top-[7448px] left-[185px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
+        {/* <div className="absolute top-[7422px] left-[47px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
+        {/* <p className="top-[7448px] left-[185px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold text-[#f36a1e]">
             The continuity with one mentor for four weeks made it far
 
@@ -99,10 +99,10 @@ export const Testimonials = () => {
         </p>
         <div className="top-[7313px] left-[23px] w-[140px] h-[220px] bg-white text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
-        </div>
-        <div className="absolute top-[9163px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
+        </div> */}
+        {/* <div className="absolute top-[9163px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
         {/* <div className="absolute top-[9413px] left-[50px] w-[1340px] h-[474px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
-        <p className="top-[9189px] left-[188px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
+        {/* <p className="top-[9189px] left-[188px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold  text-[#f36a1e]">
             I loved building our own brand and creating a detailed
             <br />
@@ -114,7 +114,7 @@ export const Testimonials = () => {
         </p>
         <div className="top-[9054px] left-[16px] w-[140px] h-[220px] bg-white text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
-        </div>
+        </div> */}
         {/* <div className="absolute top-[4214px] left-[78px] w-[896px] h-[215px] rounded-[20px] border border-solid border-[#122e6c]" />
         <div className="top-[4100px] left-[40px] w-[140px] h-[220px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap bg-white">
           “

@@ -104,7 +104,7 @@ export function ProgramStructure() {
       </section>
 
       {/* Desktop Version */}
-      <section className="hidden lg:block w-full bg-white py-20">
+      <section className="hidden lg:block w-full bg-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 gap-16 items-center">
           {/* LEFT */}
           <div>

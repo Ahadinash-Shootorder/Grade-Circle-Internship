@@ -400,14 +400,13 @@ export const RealStories = () => {
         />
 
         <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
-          We were pushed to go into every detail. The accountability and depth
-          made it stand out from any school project
+          The continuity with one mentor for four weeks made it far more engaging than any other program I've attended.
         </p>
 
         <p className="text-[#122e6c] text-xl">
-          <span className="font-bold">– Riva,</span>{" "}
+          <span className="font-bold">– Aahana,</span>{" "}
           <span className="text-black">
-            Kanakia International School, Mumbai
+            Lotus Valley International School, Noida
           </span>
         </p>
       </div>

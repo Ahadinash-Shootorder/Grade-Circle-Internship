@@ -116,6 +116,25 @@ export const TrustedSchools = () => {
             </a>
           </div>
         </div>
+        <div className="relative mx-auto mt-12 w-full max-w-[745px] border border-[#ef7f1a] rounded-[20px] p-10 bg-white">
+
+  <img
+    src="./Blue_quote.jpg"
+    alt="quote"
+    className="absolute -top-6 -left-6 w-[60px] h-[60px]"
+  />
+
+  <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
+    I loved building our own brand and creating a detailed
+investor pitch- it felt like the real world.
+  </p>
+
+  <p className="text-[#122e6c] text-xl">
+    <span className="font-bold">– Laavanya,</span>{" "}
+    <span className="text-black">The British Co-Ed High School, Patiala</span>
+  </p>
+</div>
+
       </div>
     </section>
   );

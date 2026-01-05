@@ -129,9 +129,7 @@ export const CareerStreams = () => {
       {/* Desktop Version - Original */}
       {/* ================== CAREER STREAMS ================== */}
 <div className="hidden lg:flex justify-center w-full relative">
-  <div className="relative w-[1440px] origin-top
-                  scale-[0.88] xl:scale-[0.95] 2xl:scale-100
-                  transition-transform duration-300">
+  <div className="relative w-[1440px] origin-top scale-[0.88] xl:scale-[0.95] 2xl:scale-100 transition-transform duration-300">
 
 {/* ================== CAREER STREAMS ================== */}
 <div className="w-full py-12 bg-white relative -top-[170px]">
@@ -175,7 +173,7 @@ export const CareerStreams = () => {
 
 
 {/* ================== QUOTE SECTION ================== */}
-<div className="flex justify-center w-full py-28 bg-white relative">
+<div className="flex justify-center w-full py-23 pt-20 bg-white relative">
 
   <div className="relative w-[1440px]">
 
