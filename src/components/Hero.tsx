@@ -32,7 +32,7 @@ export const Hero = () => {
       {/* Mobile Layout */}
       <div className="block md:hidden relative">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#ef7f1a] to-[#d66a0a]">
+        <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover opacity-60"
             alt="Background"
@@ -41,7 +41,7 @@ export const Hero = () => {
         </div>
         
         {/* Content */}
-        <div className=" z-10 pt-4 px-5 pb-8">
+        <div className="relative z-10 pt-4 px-5 pb-8">
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <img
@@ -142,10 +142,10 @@ export const Hero = () => {
           />
           
           {/* Content Container */}
-          <div className="relative z-10 w-full container mx-auto pt-[27px]">
+          <div className="relative z-10 container mx-auto px-[50px] pt-[27px]">
             {/* Logo */}
             <img
-              className="h-[54px] object-cover mb-12"
+              className="w-[310px] h-[54px] object-cover mb-12"
               alt="Gradcircle"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png"
             />
