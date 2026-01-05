@@ -40,18 +40,30 @@ const Index = () => {
       <div className="min-h-screen w-full  overflow-x-hidden">
       
         {/* <Header /> */}
+        {/* Hero */}
         <Hero />
+        {/* FoundedByAlumni */}
         <FoundedByAlumni />
+        {/* ProgramOverview */}
         <ProgramOverview />
+        {/* CareerStreams */}
         <CareerStreams />
+        {/* Testimonials */}
         <Testimonials />
+        {/* ProgramStructure */}
         <ProgramStructure />
         {/* <StudentExperiences /> */}
+          {/* ProgramDeliverables */}
         <ProgramDeliverables />
+          {/* FoundingTeam */}
         <FoundingTeam />
+        {/* RealStories */}
         <RealStories />
+        {/* TrustedSchools */}
         <TrustedSchools />
+        {/* SampleProjects */}
         <SampleProjects />
+        {/* Footer */}
         <Footer />
       </div>
     </>
