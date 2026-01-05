@@ -20,6 +20,33 @@ export const RealStories = () => {
     }
   ];
 
+  const desktopMentors = [
+    {
+      name: "Rahul Shubham",
+      title: "Senior Manager, UX, HDFC",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-4.png",
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-26.svg"
+    },
+    {
+      name: "Nobin Mattam",
+      title: "Talent Acquisition Lead, TESCO",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png",
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-41.svg"
+    },
+    {
+      name: "Satyanshu Singh",
+      title: "Filmfare Award Winner & Netflix Fame Writer and Director",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png",
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-42.svg"
+    },
+    {
+      name: "Rachita Rungta",
+      title: "Senior Data Scientist, Unilever",
+      image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-7.png",
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-43.svg"
+    }
+  ];
+
   const testimonials = [
     {
       heading: "Learning by Doing",
@@ -102,9 +129,9 @@ export const RealStories = () => {
             </div>
           </div>
           
-          <div className="relative mt-9">
+          <div className=" mt-9">
             {/* Quote Mark */}
-            <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none ml-1">
+            <div className="bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none ml-1">
               "
             </div>
             
@@ -143,7 +170,7 @@ export const RealStories = () => {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="flex-shrink-0 w-full relative">
                   <div className="border border-[#ef7f1a] rounded-lg p-6 mt-6 pt-12 bg-white shadow-sm">
-                    <div className="text-black text-lg mb-2">{testimonial.heading}</div>
+                    <div className="text-black text-lg mb-2 font-semibold">{testimonial.heading}</div>
                     <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4">
                       {testimonial.quote}
                     </p>
@@ -255,8 +282,8 @@ export const RealStories = () => {
                 </span>
               </div>
               
-              <div className="border-2 border-[#ef7f1a] rounded-2xl p-8 pt-16 bg-white">
-                <div className="text-black text-2xl mb-4">Learning by Doing</div>
+              <div className="border-2 border-[#ef7f1a] rounded-2xl p-8 pt-16 bg-white shadow-sm">
+                <div className="text-black text-2xl mb-4 font-semibold">Learning by Doing</div>
                 <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-xl leading-relaxed mb-6">
                   Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
                 </p>
@@ -270,8 +297,8 @@ export const RealStories = () => {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden lg:block w-full py-16 bg-white">
-        <div className="max-w-[1340px] mx-auto px-[50px]">
+      <div className="hidden lg:block w-full bg-white">
+        <div className="max-w-[1340px] mx-auto px-[50px] py-16">
           {/* Sample Profiles Title */}
           <h2 className="font-['Inter',Helvetica] font-extrabold text-black text-4xl text-center mb-12">
             Sample Profiles of Industry Mentors
@@ -280,93 +307,33 @@ export const RealStories = () => {
           {/* Mentors Section */}
           <div className="bg-[#f7f7f7] rounded-[20px] p-12 mb-16">
             <div className="flex justify-center gap-16 mb-12">
-              {/* Mentor 1 */}
-              <div className="flex flex-col items-center">
-                <div className="relative mb-4">
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-26.svg"
-                    alt="HDFC"
-                    className="absolute -top-2 -left-4 w-[79px] h-[71px] object-cover z-10"
-                  />
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-4.png"
-                    alt="Rahul Shubham"
-                    className="w-[151px] h-[151px] object-cover"
-                  />
+              {desktopMentors.map((mentor, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="relative mb-4">
+                    <img
+                      src={mentor.badgeImage}
+                      alt={`${mentor.name} badge`}
+                      className="absolute -top-2 -left-4 w-[79px] h-[71px] object-cover z-10"
+                    />
+                    <img
+                      src={mentor.image}
+                      alt={mentor.name}
+                      className="w-[151px] h-[151px] object-cover"
+                    />
+                  </div>
+                  <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
+                    {mentor.name}
+                  </h3>
+                  <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
+                    {mentor.title.split(', ').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        {i < mentor.title.split(', ').length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </p>
                 </div>
-                <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
-                  Rahul Shubham
-                </h3>
-                <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
-                  Senior Manager, UX,<br />HDFC
-                </p>
-              </div>
-
-              {/* Mentor 2 */}
-              <div className="flex flex-col items-center">
-                <div className="relative mb-4">
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-41.svg"
-                    alt="TESCO"
-                    className="absolute -top-2 -left-4 w-[79px] h-[71px] object-cover z-10"
-                  />
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png"
-                    alt="Nobin Mattam"
-                    className="w-[151px] h-[151px] object-cover"
-                  />
-                </div>
-                <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
-                  Nobin Mattam
-                </h3>
-                <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
-                  Talent Acquisition Lead,<br />TESCO
-                </p>
-              </div>
-
-              {/* Mentor 3 */}
-              <div className="flex flex-col items-center">
-                <div className="relative mb-4">
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-42.svg"
-                    alt="Netflix"
-                    className="absolute -top-2 -left-4 w-[79px] h-[71px] object-cover z-10"
-                  />
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png"
-                    alt="Satyanshu Singh"
-                    className="w-[151px] h-[151px] object-cover"
-                  />
-                </div>
-                <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
-                  Satyanshu Singh
-                </h3>
-                <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
-                  Filmfare Award Winner &<br />Netflix Fame Writer and Director
-                </p>
-              </div>
-
-              {/* Mentor 4 */}
-              <div className="flex flex-col items-center">
-                <div className="relative mb-4">
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-43.svg"
-                    alt="Unilever"
-                    className="absolute -top-2 -left-4 w-[79px] h-[71px] object-cover z-10"
-                  />
-                  <img
-                    src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-7.png"
-                    alt="Rachita Rungta"
-                    className="w-[151px] h-[151px] object-cover"
-                  />
-                </div>
-                <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
-                  Rachita Rungta
-                </h3>
-                <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
-                  Senior Data Scientist,<br />Unilever
-                </p>
-              </div>
+              ))}
             </div>
 
             {/* Stats Banner */}
@@ -395,9 +362,28 @@ export const RealStories = () => {
           </h2>
 
           <div className="bg-[#f7f7f7] rounded-[20px] p-12">
-            {/* Add your testimonials grid or carousel here */}
-            <div className="text-center text-gray-600">
-              Testimonials section
+            {/* Testimonials Grid */}
+            <div className="grid grid-cols-2 gap-8">
+              {testimonials.slice(0, 4).map((testimonial, index) => (
+                <div key={index} className="relative">
+                  {/* Quote Mark */}
+                  <div className="absolute -top-4 -left-4 bg-[#f7f7f7] h-[60px] w-[60px] flex items-center justify-center z-10">
+                    <span className="text-[#ef7f1a] text-[100px] font-['Kannada_Sangam_MN-Regular',Helvetica] leading-none">
+                      "
+                    </span>
+                  </div>
+                  
+                  <div className="border-2 border-[#ef7f1a] rounded-2xl p-6 pt-10 bg-white shadow-sm h-full">
+                    <div className="text-black text-xl mb-3 font-semibold">{testimonial.heading}</div>
+                    <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-base leading-relaxed mb-4">
+                      {testimonial.quote}
+                    </p>
+                    <p className="text-[#ef7f1a] text-sm">
+                      <span className="font-bold">– {testimonial.author},</span> {testimonial.school}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -405,3 +391,5 @@ export const RealStories = () => {
     </section>
   );
 };
+
+export default RealStories;
