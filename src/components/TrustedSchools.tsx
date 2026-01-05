@@ -96,7 +96,7 @@ export const TrustedSchools = () => {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block relative">
 
   <p className="absolute top-[8553px] left-[489px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center">
     Trusted by Students from<br />100+ Schools Globally

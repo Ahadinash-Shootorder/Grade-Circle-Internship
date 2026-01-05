@@ -245,7 +245,7 @@ export const RealStories = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block relative">
         <p className="absolute top-[7618px] left-[386px] [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">
           Real Stories | Real Skills | Real Impact
         </p>

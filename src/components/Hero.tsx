@@ -142,10 +142,10 @@ export const Hero = () => {
           />
           
           {/* Content Container */}
-          <div className="relative z-10 container mx-auto px-[50px] pt-[27px]">
+          <div className="relative z-10 w-full container mx-auto pt-[27px]">
             {/* Logo */}
             <img
-              className="w-[310px] h-[54px] object-cover mb-12"
+              className="h-[54px] object-cover mb-12"
               alt="Gradcircle"
               src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png"
             />

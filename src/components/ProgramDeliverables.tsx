@@ -83,7 +83,7 @@ export const ProgramDeliverables = () => {
       </div>
 
       {/* Desktop Version */}
-      <div className="hidden lg:block w-full py-16 bg-white relative top-[2240px]">
+      <div className="hidden lg:block w-full py-16 bg-white relative top-[1330px]">
         <div className="max-w-[1340px] mx-auto px-[50px]">
           <div className="mb-12">
             <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[74px] leading-tight">

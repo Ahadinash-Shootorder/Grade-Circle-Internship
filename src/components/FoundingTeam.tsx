@@ -112,7 +112,7 @@ export const FoundingTeam = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block w-full py-8 bg-[#f7f7f7] relative top-[2220px]">
+      <div className="hidden lg:block w-full py-8 bg-[#f7f7f7] relative top-[1290px]">
         <div className="max-w-[1340px] mx-auto px-[50px]">
           <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center ">
             Founding Team

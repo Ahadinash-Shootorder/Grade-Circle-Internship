@@ -129,12 +129,12 @@ export const ProgramStructure = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block">
-        <div className="absolute top-[5240px] left-[-5px] w-[1440px] h-[932px] bg-[#f7f7f7]" />
+      <div className="hidden lg:block relative">
+        {/* <div className="absolute top-[5240px] left-[-5px] w-[1440px] h-[932px] bg-[#f7f7f7]" /> */}
 
-        <p className="absolute top-[2948px] left-[354px] [font-family:'Inter',Helvetica] font-bold text-[#ef7f1a] text-[40px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
+        {/* <p className="absolute top-[2948px] left-[354px] [font-family:'Inter',Helvetica] font-bold text-[#ef7f1a] text-[40px] text-center tracking-[0] leading-[normal] whitespace-nowrap">
           100+ Mentors | 20+ Career Pathways
-        </p>
+        </p> */}
 
         <div className="top-[3417px] left-[54px] absolute [font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[74px] text-center tracking-[0] leading-[normal]">
           Program

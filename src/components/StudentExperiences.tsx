@@ -30,7 +30,7 @@ export const StudentExperiences = () => {
       </section>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block py-16 relative top-[2300px]">
+      <div className="hidden lg:block py-16 relative top-[1350px]">
         <div className="max-w-[1340px] mx-auto px-[50px]">
           <div className="relative border border-solid border-[#122e6c] rounded-[20px] p-10">
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white px-8">

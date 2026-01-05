@@ -93,7 +93,7 @@ export const SampleProjects = () => {
       </section>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block relative">
         <div className="absolute top-[9384px] left-[88px] w-[310px] h-[57px] bg-white" />
 
         <div className="absolute top-[9391px] left-24 [font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center tracking-[0] leading-[normal]">

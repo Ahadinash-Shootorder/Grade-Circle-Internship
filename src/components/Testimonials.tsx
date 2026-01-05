@@ -60,10 +60,10 @@ export const Testimonials = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block">
-        <div className="absolute top-[2089px] left-[50px] w-[1340px] h-[961px] rounded-[20px] border border-solid border-[#122e6c]" />
-        <div className="absolute top-[3109px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
-        <p className="absolute top-[3135px] left-[188px] w-[1148px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">
+      <div className="hidden lg:block relative">
+        {/* <div className="absolute top-[2089px] left-[50px] w-[1340px] h-[961px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
+        {/* <div className="absolute top-[3009px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
+        {/* <p className="absolute top-[3035px] left-[188px] w-[1148px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">
           <span className="font-semibold italic text-[#f36a1e]">
             Instead of just theory, we worked on realistic case studies,
             <br />
@@ -71,7 +71,7 @@ export const Testimonials = () => {
           </span>
           <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
           <span className="text-black text-2xl"> Prometheus School, Noida</span>
-        </p>
+        </p> */}
         <p className="absolute top-[4223px] left-[203px] w-[745px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">
           <span className="font-semibold italic text-[#f36a1e]">
             We were pushed to go into every detail The accountability and depth
@@ -83,10 +83,10 @@ export const Testimonials = () => {
             Kanakia International School, Mumbai
           </span>
         </p>
-        <div className="absolute top-[3054px] left-[30px] w-[127px] h-40 bg-[#f7f7f7]" />
-        <div className="top-[3000px] left-[26px] w-[140px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
+        {/* <div className="absolute top-[2954px] left-[30px] w-[127px] h-40 bg-[#f7f7f7]" /> */}
+        {/* <div className="top-[2900px] left-[26px] w-[140px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
-        </div>
+        </div> */}
         <div className="absolute top-[7422px] left-[47px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
         <p className="top-[7448px] left-[185px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold text-[#f36a1e]">

@@ -127,141 +127,82 @@ export const CareerStreams = () => {
       </div>
 
       {/* Desktop Version - Original */}
-      <div className="hidden lg:block">
-        <div className="absolute top-[1969px] left-0 w-[1440px] h-[1373px] bg-[#f7f7f7]" />
+      {/* ================== CAREER STREAMS ================== */}
+<div className="hidden lg:flex justify-center w-full relative">
+  <div className="relative w-[1440px] origin-top
+                  scale-[0.88] xl:scale-[0.95] 2xl:scale-100
+                  transition-transform duration-300">
 
-        <p className="absolute top-[2010px] left-[422px] z-20 [font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-5xl text-center tracking-[0] leading-[normal] bg-[#f7f7f7]">
-          Sample Career Streams &
-          <br />
-          <span>Mentor Backgrounds</span>
-        </p>
+{/* ================== CAREER STREAMS ================== */}
+<div className="w-full py-12 bg-white relative -top-[170px]">
+  <div className="max-w-[1340px] mx-auto px-[50px] border border-[#122e6c] rounded-md py-4">
 
-        <div className="absolute top-[2080px] left-[457px] w-[536px] h-[59px] bg-[#f7f7f7]" />
+    <h2 className="font-bold text-[#122e6c] text-4xl text-center mb-10 relative -top-16 bg-white">
+      Sample Career Streams &<br />Mentor Backgrounds
+    </h2>
 
-        <div className="top-[2153px] h-[118px] absolute left-20 w-[1270px]">
-          <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="absolute top-[11px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[11px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-7 left-11 [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Business &
-            <br />
-            Consulting
+    <div className="border border-[#122e6c] rounded-[10px] overflow-hidden">
+      {careerData.map((stream, index) => (
+        <div key={index} className="flex items-stretch border-b border-[#122e6c] last:border-b-0">
+
+          <div className="bg-[#122e6c] py-5 px-6 w-[200px] flex items-center">
+            <span className="font-bold text-white text-lg">
+              {stream.title}
+            </span>
           </div>
-          <div className="absolute top-[29px] left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Strategy Consultant,
-            <br />
-            Business Analyst
+
+          <div className="bg-[#e8e8e8] py-5 px-6 w-[350px] flex items-center">
+            <p className="text-black text-lg">
+              {stream.description}
+            </p>
           </div>
+
+          <div className="bg-white flex items-center gap-6 flex-1 justify-center py-4 px-6">
+            {stream.logos.map((logo, i) => (
+              <img key={i} className="h-16 max-w-[100px] object-contain" src={logo.src} alt={logo.alt} />
+            ))}
+          </div>
+
         </div>
+      ))}
+    </div>
 
-        <div className="top-[2137px] h-[265px] absolute left-20 w-[1270px]">
-          <div className="absolute top-[147px] left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <img
-            className="absolute top-0 left-[763px] w-[150px] h-[150px] object-cover"
-            alt="Mc kinsey logo"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png"
-          />
-          <img
-            className="absolute top-[27px] left-[953px] w-[106px] h-[106px] object-cover"
-            alt="Bcg logo"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png"
-          />
-          <img
-            className="absolute top-[27px] left-[1111px] w-24 h-24 object-cover"
-            alt="Pwc logo"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png"
-          />
-          <div className="absolute top-[158px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[158px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-[188px] left-[39px] [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Technology
-          </div>
-          <p className="absolute top-44 left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Product Manager, AI Researcher,
-            <br />
-            Software Architect
-          </p>
-        </div>
+    <p className="font-bold text-[#ef7f1a] text-3xl text-center mt-10 py-3">
+      100+ Mentors | 20+ Career Pathways
+    </p>
+  </div>
+</div>
 
-        <div className="top-[2404px] h-[118px] absolute left-20 w-[1270px]">
-          <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="absolute top-[11px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[11px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-11 left-11 [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Finance
-          </div>
-          <div className="absolute top-[29px] left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Investment Banker,
-            <br />
-            Financial Analyst, Auditor
-          </div>
-        </div>
 
-        <div className="top-[2540px] h-[118px] absolute left-20 w-[1270px]">
-          <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="absolute top-[11px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[11px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-7 left-11 [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Pharma/
-            <br />
-            Healthcare
-          </div>
-          <div className="absolute top-[29px] left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Strategy Consultant,
-            <br />
-            Business Analyst
-          </div>
-        </div>
+{/* ================== QUOTE SECTION ================== */}
+<div className="flex justify-center w-full py-28 bg-white relative">
 
-        <div className="top-[2671px] h-[118px] absolute left-20 w-[1270px]">
-          <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="absolute top-[11px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[11px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-11 left-[47px] [font-family:'Inter',Helvetica] font-bold text-white text-2xl tracking-[0] leading-[normal]">
-            Legal
-          </div>
-          <p className="absolute top-[29px] left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Product Manager, AI Researcher,
-            <br />
-            Software Architect
-          </p>
-        </div>
+  <div className="relative w-[1440px]">
 
-        <div className="top-[2791px] h-[118px] absolute left-20 w-[1270px]">
-          <div className="absolute top-0 left-0 w-[1266px] h-[118px] bg-[#ffffff33] rounded-[10px] shadow-[0px_4px_4px_#00000040]" />
-          <div className="absolute top-[11px] left-[111px] w-[572px] h-[94px] bg-[#d9d9d9] rounded-[10px]" />
-          <div className="absolute top-[11px] left-[13px] w-[209px] h-[94px] bg-[#122e6c] rounded-[10px]" />
-          <div className="absolute top-[29px] left-11 [font-family:'Inter',Helvetica] font-bold text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Media and
-            <br />
-            Journalism
-          </div>
-          <div className="absolute top-[29px] left-[254px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal]">
-            Investment Banker,
-            <br />
-            Financial Analyst, Auditor
-          </div>
-        </div>
+    <div className="absolute left-[30px] -top-[270px] w-[127px] h-40 bg-[#f7f7f7] z-10" />
 
-        <div className="inline-flex items-center gap-[34px] absolute top-[2285px] left-[843px]">
-          <img className="relative w-[131px] h-[131px] object-cover" alt="Amazon logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png" />
-          <img className="relative w-[131px] h-[131px] object-cover" alt="Google logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png" />
-          <img className="relative w-[131px] h-[131px] object-cover" alt="Oracle logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png" />
-        </div>
+    <div className="absolute left-[26px] top-[-400px] text-[#122e6c] z-20 text-[400px] font-normal">
+      “
+    </div>
 
-        <img className="absolute top-[2428px] left-[1080px] w-[80px] h-[80px] object-cover" alt="Barclays logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png" />
-        <img className="absolute top-[2428px] left-[1212px] w-[80px] h-[80px] object-cover" alt="Ey logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png" />
-        <img className="absolute top-[2428px] left-[844px] w-[80px] h-[80px] object-cover" alt="Jp morgan logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png" />
-        <img className="absolute top-[2428px] left-[962px] w-[80px] h-[80px] object-cover" alt="Kpmg logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png" />
-        <img className="absolute top-[2544px] left-[1007px] w-[109px] h-[109px] object-cover" alt="Ag logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png" />
-        <img className="absolute top-[2544px] left-[1175px] w-[109px] h-[109px] object-cover" alt="Bristol myers logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png" />
-        <img className="absolute top-[2532px] left-[839px] w-[109px] h-[109px] object-cover" alt="Novartis logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png" />
-        <img className="absolute top-[2671px] left-[895px] w-[152px] h-[117px] object-cover" alt="Acm logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png" />
-        <img className="absolute top-[2671px] left-[1060px] w-[152px] h-[117px] object-cover" alt="Fox mandal logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png" />
-        <img className="absolute top-[2788px] left-[1034px] w-[124px] h-[124px] object-cover" alt="Adsfactor pr logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png" />
-        <img className="absolute top-[2788px] left-[1171px] w-[124px] h-[124px] object-cover" alt="Cnn news logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png" />
-        <img className="absolute top-[2788px] left-[900px] w-[124px] h-[124px] object-cover" alt="Indian express logo" src="https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png" />
-      </div>
+    <div className="absolute top-[-230px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-[#122e6c]" />
+
+    <p className="absolute top-[-205px] left-[188px] w-[1148px] text-4xl leading-normal">
+      <span className="font-semibold italic text-[#f36a1e]">
+        Instead of just theory, we worked on realistic case studies,<br />
+        applying our learnings like in real life.{" "}
+      </span>
+      <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
+      <span className="text-black text-2xl"> Prometheus School, Noida</span>
+    </p>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+
     </>
   );
 };

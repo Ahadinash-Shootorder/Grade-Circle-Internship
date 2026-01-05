@@ -101,7 +101,7 @@ export const Footer = () => {
       </section>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block relative">
         <div className="absolute top-[10600px] left-0 w-full h-[200px] bg-[#122e6c]">
           <p className="absolute top-[50px] left-1/2 transform -translate-x-1/2 text-white text-lg text-center">
             info@mygradcircle.com | www.mygradcircle.com
