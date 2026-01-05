@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export const RealStories = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -9,15 +9,15 @@ export const RealStories = () => {
       title: "Talent Acquisition Lead, TESCO",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png",
       badge: "TESCO",
-      badgeImage: "/Tesco.png"
+      badgeImage: "/Tesco.png",
     },
     {
       name: "Satyanshu Singh",
       title: "Filmfare Award Winner & Netflix Fame Writer and Director",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png",
       badge: "NETFLIX",
-      badgeImage: "/Netfilx.png"
-    }
+      badgeImage: "/Netfilx.png",
+    },
   ];
 
   const desktopMentors = [
@@ -25,59 +25,64 @@ export const RealStories = () => {
       name: "Rahul Shubham",
       title: "Senior Manager, UX, HDFC",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-4.png",
-      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-26.svg"
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-26.svg",
     },
     {
       name: "Nobin Mattam",
       title: "Talent Acquisition Lead, TESCO",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png",
-      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-41.svg"
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-41.svg",
     },
     {
       name: "Satyanshu Singh",
       title: "Filmfare Award Winner & Netflix Fame Writer and Director",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png",
-      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-42.svg"
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-42.svg",
     },
     {
       name: "Rachita Rungta",
       title: "Senior Data Scientist, Unilever",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-7.png",
-      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-43.svg"
-    }
+      badgeImage: "https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-43.svg",
+    },
   ];
 
   const testimonials = [
     {
       heading: "Learning by Doing",
-      quote: "Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.",
+      quote:
+        "Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.",
       author: "Sara",
-      school: "Prometheus School, Noida"
+      school: "Prometheus School, Noida",
     },
     {
       heading: "Real-World Experience",
-      quote: "The mentorship program gave me insights into corporate life that no classroom could provide.",
+      quote:
+        "The mentorship program gave me insights into corporate life that no classroom could provide.",
       author: "Aahana",
-      school: "Lotus Valley International School, Noida"
+      school: "Lotus Valley International School, Noida",
     },
     {
       heading: "Career Clarity",
-      quote: "I now understand what different roles entail and can make informed career decisions.",
+      quote:
+        "I now understand what different roles entail and can make informed career decisions.",
       author: "Rahul",
-      school: "Delhi Public School, Gurgaon"
+      school: "Delhi Public School, Gurgaon",
     },
     {
       heading: "Skill Development",
-      quote: "The hands-on projects helped me develop practical skills that will be valuable in my future career.",
+      quote:
+        "The hands-on projects helped me develop practical skills that will be valuable in my future career.",
       author: "Priya",
-      school: "Modern School, Delhi"
+      school: "Modern School, Delhi",
     },
     {
       heading: "Industry Connections",
-      quote: "Getting mentored by professionals from top companies opened doors I never knew existed.",
+      quote:
+        "Getting mentored by professionals from top companies opened doors I never knew existed.",
       author: "Arjun",
-      school: "St. Xavier's School, Mumbai"
-    }
+      school: "St. Xavier's School, Mumbai",
+    },
   ];
 
   return (
@@ -120,7 +125,11 @@ export const RealStories = () => {
           <div className="bg-[#122e6c] rounded-lg p-4 flex items-center justify-center gap-4">
             <div className="text-center">
               <div className="text-white font-bold text-4xl">20+</div>
-              <div className="text-white text-xs">UNIQUE INDUSTRIES/<br />FUNCTIONS</div>
+              <div className="text-white text-xs">
+                UNIQUE INDUSTRIES/
+                <br />
+                FUNCTIONS
+              </div>
             </div>
             <div className="text-white font-bold">FROM</div>
             <div className="text-center">
@@ -128,26 +137,33 @@ export const RealStories = () => {
               <div className="text-white text-xs">MENTORS</div>
             </div>
           </div>
-          
+
           <div className=" mt-9">
             {/* Quote Mark */}
             <div className="bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none ml-1">
               "
             </div>
-            
+
             {/* Testimonial Box */}
             <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">
               <p className="font-['Montserrat',Helvetica] font-normal text-xl leading-relaxed">
                 <span className="font-semibold italic text-[#f36a1e]">
-                  The continuity with one mentor for four weeks made it far more engaging than any other program I've attended.
+                  The continuity with one mentor for four weeks made it far more
+                  engaging than any other program I've attended.
                 </span>
-                <span className="font-bold text-[#122e6c] text-lg"> – Aahana,</span>
-                <span className="text-black text-lg"> Lotus Valley International School, Noida</span>
+                <span className="font-bold text-[#122e6c] text-lg">
+                  {" "}
+                  – Aahana,
+                </span>
+                <span className="text-black text-lg">
+                  {" "}
+                  Lotus Valley International School, Noida
+                </span>
               </p>
             </div>
           </div>
         </div>
-            
+
         {/* Real Stories Title */}
         <div className="px-4 py-8 bg-white">
           <h2 className="font-['Inter',Helvetica] font-extrabold text-[#0e416f] text-2xl text-center mb-6">
@@ -162,20 +178,23 @@ export const RealStories = () => {
                 "
               </span>
             </div>
-            
-            <div 
+
+            <div
               className="flex transition-transform duration-300 ease-in-out"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="flex-shrink-0 w-full relative">
                   <div className="border border-[#ef7f1a] rounded-lg p-6 mt-6 pt-12 bg-white shadow-sm">
-                    <div className="text-black text-lg mb-2 font-semibold">{testimonial.heading}</div>
+                    <div className="text-black text-lg mb-2 font-semibold">
+                      {testimonial.heading}
+                    </div>
                     <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4">
                       {testimonial.quote}
                     </p>
                     <p className="text-[#ef7f1a]">
-                      <span className="font-bold">– {testimonial.author},</span> {testimonial.school}
+                      <span className="font-bold">– {testimonial.author},</span>{" "}
+                      {testimonial.school}
                     </p>
                   </div>
                 </div>
@@ -190,7 +209,7 @@ export const RealStories = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === activeIndex ? 'bg-[#122e6c]' : 'bg-gray-300'
+                  index === activeIndex ? "bg-[#122e6c]" : "bg-gray-300"
                 }`}
                 aria-label={`View testimonial ${index + 1}`}
               />
@@ -237,7 +256,11 @@ export const RealStories = () => {
           <div className="bg-[#122e6c] rounded-lg p-6 flex items-center justify-center gap-8 max-w-md mx-auto mb-12">
             <div className="text-center">
               <div className="text-[#ef7f1a] font-bold text-4xl">20+</div>
-              <div className="text-white text-sm">UNIQUE INDUSTRIES/<br />FUNCTIONS</div>
+              <div className="text-white text-sm">
+                UNIQUE INDUSTRIES/
+                <br />
+                FUNCTIONS
+              </div>
             </div>
             <div className="text-white font-bold text-4xl">FROM</div>
             <div className="text-center">
@@ -253,14 +276,21 @@ export const RealStories = () => {
                 "
               </span>
             </div>
-            
+
             <div className="border-2 border-[#122e6c] rounded-2xl p-8 pt-12 shadow-sm bg-white">
               <p className="font-['Montserrat',Helvetica] font-normal text-xl leading-relaxed">
                 <span className="font-semibold italic text-[#f36a1e]">
-                  The continuity with one mentor for four weeks made it far more engaging than any other program I've attended.
+                  The continuity with one mentor for four weeks made it far more
+                  engaging than any other program I've attended.
                 </span>
-                <span className="font-bold text-[#122e6c] text-lg"> – Aahana,</span>
-                <span className="text-black text-lg"> Lotus Valley International School, Noida</span>
+                <span className="font-bold text-[#122e6c] text-lg">
+                  {" "}
+                  – Aahana,
+                </span>
+                <span className="text-black text-lg">
+                  {" "}
+                  Lotus Valley International School, Noida
+                </span>
               </p>
             </div>
           </div>
@@ -281,14 +311,18 @@ export const RealStories = () => {
                   "
                 </span>
               </div>
-              
+
               <div className="border-2 border-[#ef7f1a] rounded-2xl p-8 pt-16 bg-white shadow-sm">
-                <div className="text-black text-2xl mb-4 font-semibold">Learning by Doing</div>
+                <div className="text-black text-2xl mb-4 font-semibold">
+                  Learning by Doing
+                </div>
                 <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-xl leading-relaxed mb-6">
-                  Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.
+                  Instead of just theory, we worked on realistic case studies,
+                  applying our learnings like in real life.
                 </p>
                 <p className="text-[#ef7f1a] text-lg">
-                  <span className="font-bold">– Sara,</span> Prometheus School, Noida
+                  <span className="font-bold">– Sara,</span> Prometheus School,
+                  Noida
                 </p>
               </div>
             </div>
@@ -325,10 +359,10 @@ export const RealStories = () => {
                     {mentor.name}
                   </h3>
                   <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
-                    {mentor.title.split(', ').map((line, i) => (
+                    {mentor.title.split(", ").map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
-                        {i < mentor.title.split(', ').length - 1 && <br />}
+                        {i < mentor.title.split(", ").length - 1 && <br />}
                       </React.Fragment>
                     ))}
                   </p>
@@ -345,7 +379,9 @@ export const RealStories = () => {
                   className="w-[269px] h-[149px] object-cover"
                 />
                 <div className="bg-white px-4 py-2 rotate-[-90deg]">
-                  <div className="font-['Inter',Helvetica] font-normal text-black text-2xl">FROM</div>
+                  <div className="font-['Inter',Helvetica] font-normal text-black text-2xl">
+                    FROM
+                  </div>
                 </div>
                 <img
                   src="https://c.animaapp.com/mjmwrwbp4K97wU/img/100-mentors.png"
@@ -354,6 +390,27 @@ export const RealStories = () => {
                 />
               </div>
             </div>
+            <div className="relative mx-auto mt-12 w-full max-w-[745px] border border-[#ef7f1a] rounded-[20px] p-10 bg-white">
+
+        {/* Quote image */}
+        <img
+          src="./Blue_quote.jpg"
+          alt="quote"
+          className="absolute -top-6 -left-6 w-[60px] h-[60px]"
+        />
+
+        <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
+          We were pushed to go into every detail. The accountability and depth
+          made it stand out from any school project
+        </p>
+
+        <p className="text-[#122e6c] text-xl">
+          <span className="font-bold">– Riva,</span>{" "}
+          <span className="text-black">
+            Kanakia International School, Mumbai
+          </span>
+        </p>
+      </div>
           </div>
 
           {/* Real Stories Section */}
@@ -362,40 +419,41 @@ export const RealStories = () => {
           </h2>
 
           <div className="grid grid-cols-2 gap-10">
+            {testimonials.map((item, i) => (
+              <div
+                key={i}
+                className="relative border border-[#ef7f1a] rounded-[20px] p-10 bg-white"
+              >
+                {/* Quote image */}
+                <img
+                  src="./quote.png"
+                  alt="quote"
+                  className="absolute -top-6 -left-6 w-[80px] h-[80px]"
+                />
 
-  {testimonials.map((item, i) => (
-    <div
-      key={i}
-      className="relative border border-[#ef7f1a] rounded-[20px] p-10 bg-white"
-    >
-      {/* Quote image */}
-      <img
-        src="./quote.png"
-        alt="quote"
-        className="absolute -top-6 -left-6 w-[80px] h-[80px]"
-      />
+                {/* Heading + line */}
+                <div className="flex items-center gap-6 mb-4 px-6">
+                  <h3 className="text-black text-xl ">{item.heading}</h3>
+                  {/* <div className="flex-1 h-[1px] bg-[#ef7f1a]" /> */}
+                </div>
 
-      {/* Heading + line */}
-      <div className="flex items-center gap-6 mb-4 px-6">
-        <h3 className="text-black text-xl ">{item.heading}</h3>
-        {/* <div className="flex-1 h-[1px] bg-[#ef7f1a]" /> */}
-      </div>
+                {/* Quote text */}
+                <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4 px-6">
+                  {item.quote}
+                </p>
 
-      {/* Quote text */}
-      <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4 px-6">
-        {item.quote}
-      </p>
-
-      {/* Author */}
-      <p className="text-[#ef7f1a] text-lg px-6">
-        <span className="font-bold">– {item.author},</span> {item.school}
-      </p>
-    </div>
-  ))}
-
-</div>
+                {/* Author */}
+                <p className="text-[#ef7f1a] text-lg px-6">
+                  <span className="font-bold">– {item.author},</span>{" "}
+                  {item.school}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
+        
       </div>
+      
     </section>
   );
 };

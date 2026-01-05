@@ -72,7 +72,7 @@ export const Testimonials = () => {
           <span className="font-bold text-[#122e6c] text-2xl">– Sara,</span>
           <span className="text-black text-2xl"> Prometheus School, Noida</span>
         </p> */}
-        <p className="absolute top-[4223px] left-[203px] w-[745px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">
+        {/* <p className="absolute top-[4223px] left-[203px] w-[745px] [font-family:'Montserrat',Helvetica] font-normal text-transparent text-4xl tracking-[0] leading-[normal]">
           <span className="font-semibold italic text-[#f36a1e]">
             We were pushed to go into every detail The accountability and depth
             made it stand out from any school project <br />
@@ -82,7 +82,7 @@ export const Testimonials = () => {
             {" "}
             Kanakia International School, Mumbai
           </span>
-        </p>
+        </p> */}
         {/* <div className="absolute top-[2954px] left-[30px] w-[127px] h-40 bg-[#f7f7f7]" /> */}
         {/* <div className="top-[2900px] left-[26px] w-[140px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
@@ -101,7 +101,7 @@ export const Testimonials = () => {
           “
         </div>
         <div className="absolute top-[9163px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-solid border-[#122e6c]" />
-        <div className="absolute top-[9413px] left-[50px] w-[1340px] h-[474px] rounded-[20px] border border-solid border-[#122e6c]" />
+        {/* <div className="absolute top-[9413px] left-[50px] w-[1340px] h-[474px] rounded-[20px] border border-solid border-[#122e6c]" /> */}
         <p className="top-[9189px] left-[188px] w-[1148px] text-4xl leading-[normal] absolute [font-family:'Montserrat',Helvetica] font-normal text-transparent tracking-[0]">
           <span className="font-semibold  text-[#f36a1e]">
             I loved building our own brand and creating a detailed
@@ -115,10 +115,10 @@ export const Testimonials = () => {
         <div className="top-[9054px] left-[16px] w-[140px] h-[220px] bg-white text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap">
           “
         </div>
-        <div className="absolute top-[4214px] left-[78px] w-[896px] h-[215px] rounded-[20px] border border-solid border-[#122e6c]" />
+        {/* <div className="absolute top-[4214px] left-[78px] w-[896px] h-[215px] rounded-[20px] border border-solid border-[#122e6c]" />
         <div className="top-[4100px] left-[40px] w-[140px] h-[220px] text-[#122e6c] text-[400px] absolute [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-normal text-center tracking-[0] leading-[normal] whitespace-nowrap bg-white">
           “
-        </div>
+        </div> */}
 
         {/* 5 ORANGE CARDS */}
         {/* <div className="absolute top-[7797px] left-[46px] w-[650px] h-[179px] rounded-[20px] border border-solid border-[#ef7f1a]" />

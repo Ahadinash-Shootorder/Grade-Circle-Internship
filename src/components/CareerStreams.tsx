@@ -179,11 +179,14 @@ export const CareerStreams = () => {
 
   <div className="relative w-[1440px]">
 
-    <div className="absolute left-[30px] -top-[270px] w-[127px] h-40 bg-[#f7f7f7] z-10" />
+    {/* <div className="absolute left-[30px] -top-[270px] w-[127px] h-40 bg-[#f7f7f7] z-10" /> */}
 
-    <div className="absolute left-[26px] top-[-400px] text-[#122e6c] z-20 text-[400px] font-normal">
-      “
-    </div>
+    <img
+  src="./Blue_quote.jpg"
+  alt="quote"
+  className="absolute left-[26px] top-[-250px] w-[60px] h-[60px] z-20"
+/>
+
 
     <div className="absolute top-[-230px] left-[50px] w-[1340px] h-[162px] rounded-[20px] border border-[#122e6c]" />
 
