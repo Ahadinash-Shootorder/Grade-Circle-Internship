@@ -41,7 +41,7 @@ export const Hero = () => {
         </div>
         
         {/* Content */}
-        <div className="relative z-10 pt-4 px-5 pb-8">
+        <div className=" z-10 pt-4 px-5 pb-8">
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <img

@@ -37,7 +37,7 @@ const Index = () => {
         <meta name="twitter:image" content="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png" />
       </Helmet>
 
-      <div className="relative min-h-screen w-full  overflow-x-hidden">
+      <div className="min-h-screen w-full  overflow-x-hidden">
       
         {/* <Header /> */}
         <Hero />
