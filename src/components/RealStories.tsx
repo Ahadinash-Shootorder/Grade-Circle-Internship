@@ -9,14 +9,14 @@ export const RealStories = () => {
       title: "Talent Acquisition Lead, TESCO",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-5.png",
       badge: "TESCO",
-      badgeImage: "/Tesco.png",
+      badgeImage: "./Tesco.png",
     },
     {
       name: "Satyanshu Singh",
       title: "Filmfare Award Winner & Netflix Fame Writer and Director",
       image: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ellipse-6.png",
       badge: "NETFLIX",
-      badgeImage: "/Netfilx.png",
+      badgeImage: "./Netfilx.png",
     },
   ];
 
@@ -272,8 +272,8 @@ export const RealStories = () => {
           {/* Featured Testimonial */}
           <div className="relative max-w-2xl mx-auto mb-8">
             <div className="absolute -top-6 -left-4 bg-[#f7f7f7] h-[60px] w-[60px] flex items-center justify-center z-10">
-              <span className="text-[#122e6c] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none">
-                "
+              <span className="text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none">
+                “
               </span>
             </div>
 
@@ -307,8 +307,8 @@ export const RealStories = () => {
             <div className="relative">
               {/* Quote Mark */}
               <div className="absolute -top-6 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center z-10">
-                <span className="text-[#ef7f1a] text-[120px] font-['Kannada_Sangam_MN-Regular',Helvetica] leading-none">
-                  "
+                <span className="text-[#ef7f1a] text-[120px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] leading-none">
+                  “
                 </span>
               </div>
 
@@ -358,7 +358,7 @@ export const RealStories = () => {
                   <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-[15px] text-center whitespace-nowrap">
                     {mentor.name}
                   </h3>
-                  <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center">
+                  <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-[15px] text-center w-[200px] whitespace-normal break-words">
                     {mentor.title.split(", ").map((line, i) => (
                       <React.Fragment key={i}>
                         {line}
