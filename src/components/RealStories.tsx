@@ -361,31 +361,39 @@ export const RealStories = () => {
             Real Stories | Real Skills | Real Impact
           </h2>
 
-          <div className="bg-[#f7f7f7] rounded-[20px] p-12">
-            {/* Testimonials Grid */}
-            <div className="grid grid-cols-2 gap-8">
-              {testimonials.slice(0, 4).map((testimonial, index) => (
-                <div key={index} className="relative">
-                  {/* Quote Mark */}
-                  <div className="absolute -top-4 -left-4 bg-[#f7f7f7] h-[60px] w-[60px] flex items-center justify-center z-10">
-                    <span className="text-[#ef7f1a] text-[100px] font-['Kannada_Sangam_MN-Regular',Helvetica] leading-none">
-                      "
-                    </span>
-                  </div>
-                  
-                  <div className="border-2 border-[#ef7f1a] rounded-2xl p-6 pt-10 bg-white shadow-sm h-full">
-                    <div className="text-black text-xl mb-3 font-semibold">{testimonial.heading}</div>
-                    <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-base leading-relaxed mb-4">
-                      {testimonial.quote}
-                    </p>
-                    <p className="text-[#ef7f1a] text-sm">
-                      <span className="font-bold">– {testimonial.author},</span> {testimonial.school}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <div className="grid grid-cols-2 gap-10">
+
+  {testimonials.map((item, i) => (
+    <div
+      key={i}
+      className="relative border border-[#ef7f1a] rounded-[20px] p-10 bg-white"
+    >
+      {/* Quote image */}
+      <img
+        src="./quote.png"
+        alt="quote"
+        className="absolute -top-6 -left-6 w-[80px] h-[80px]"
+      />
+
+      {/* Heading + line */}
+      <div className="flex items-center gap-6 mb-4 px-6">
+        <h3 className="text-black text-xl ">{item.heading}</h3>
+        {/* <div className="flex-1 h-[1px] bg-[#ef7f1a]" /> */}
+      </div>
+
+      {/* Quote text */}
+      <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#122e6c] text-lg leading-relaxed mb-4 px-6">
+        {item.quote}
+      </p>
+
+      {/* Author */}
+      <p className="text-[#ef7f1a] text-lg px-6">
+        <span className="font-bold">– {item.author},</span> {item.school}
+      </p>
+    </div>
+  ))}
+
+</div>
         </div>
       </div>
     </section>
