@@ -11,14 +11,14 @@ export const ProgramDeliverables = () => {
   ];
 
   return (
-    <section className="w-full">
-      {/* Mobile Version */}
-      <div className="block md:hidden w-full px-5 py-10 bg-[#f7f7f7]">
+    <section className="w-full mb-5">
+      {/* Mobile Version - visible only on mobile */}
+      <div className="block md:hidden w-full px-3 py-5 bg-[#f7f7f7]">
         <div className="mb-10">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
+          <h2 className="font-['Inter',Helvetica] font-bold text-[#0e416f] text-[36px] leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:1.2px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-[52px] leading-tight">
+          <div className="[-webkit-text-stroke:1.2px_#ef7f1a] font-['Inter',Helvetica] font-bold text-transparent text-[52px] leading-tight">
             Deliverables
           </div>
         </div>
@@ -31,7 +31,7 @@ export const ProgramDeliverables = () => {
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-[17px] leading-tight">
+              <p className="font-['Inter',Helvetica] font-bold text-[#122e6c] text-[17px] leading-tight">
                 {item.text}
               </p>
             </div>
@@ -45,13 +45,13 @@ export const ProgramDeliverables = () => {
         </div>
       </div>
 
-      {/* Tablet Version */}
+      {/* Tablet Version - visible only on tablet */}
       <div className="hidden md:block lg:hidden w-full px-8 py-16 bg-[#f7f7f7]">
         <div className="text-center mb-14">
-          <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-6xl leading-tight">
+          <h2 className="font-['Inter',Helvetica] font-bold text-[#0e416f] text-6xl leading-tight">
             Program
           </h2>
-          <div className="[-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-7xl">
+          <div className="[-webkit-text-stroke:3px_#ef7f1a] font-['Inter',Helvetica] font-bold text-transparent text-7xl">
             Deliverables
           </div>
         </div>
@@ -66,7 +66,7 @@ export const ProgramDeliverables = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-xl leading-tight">
+                  <p className="font-['Inter',Helvetica] font-bold text-[#122e6c] text-xl leading-tight">
                     {item.text}
                   </p>
                 </div>
@@ -82,14 +82,14 @@ export const ProgramDeliverables = () => {
         </div>
       </div>
 
-      {/* Desktop Version */}
-      <div className="hidden lg:block w-full py-16 bg-white relative top-[1330px]">
+      {/* Desktop Version - visible only on desktop */}
+      <div className="hidden lg:block w-full py-16 bg-white">
         <div className="max-w-[1340px] mx-auto px-[50px]">
           <div className="mb-12">
-            <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#0e416f] text-[74px] leading-tight">
+            <h2 className="font-['Inter',Helvetica] font-bold text-[#0e416f] text-[74px] leading-tight">
               Program
             </h2>
-            <div className="[-webkit-text-stroke:3px_#ef7f1a] [font-family:'Inter',Helvetica] font-bold text-transparent text-9xl">
+            <div className="[-webkit-text-stroke:3px_#ef7f1a] font-['Inter',Helvetica] font-bold text-transparent text-9xl">
               Deliverables
             </div>
           </div>
@@ -104,7 +104,7 @@ export const ProgramDeliverables = () => {
                   src={item.icon}
                 />
                 <div className="bg-[#133b93] rounded-[19px] pt-24 pb-8 px-6 mt-12">
-                  <p className="[font-family:'Inter',Helvetica] font-bold text-white text-xl text-center leading-tight">
+                  <p className="font-['Inter',Helvetica] font-bold text-white text-xl text-center leading-tight">
                     {item.text}
                   </p>
                 </div>
@@ -121,7 +121,7 @@ export const ProgramDeliverables = () => {
                   src={item.icon}
                 />
                 <div className="bg-[#133b93] rounded-[19px] pt-24 pb-8 px-6 mt-12">
-                  <p className="[font-family:'Inter',Helvetica] font-bold text-white text-xl text-center leading-tight">
+                  <p className="font-['Inter',Helvetica] font-bold text-white text-xl text-center leading-tight">
                     {item.text}
                   </p>
                 </div>
@@ -131,7 +131,7 @@ export const ProgramDeliverables = () => {
 
           <div className="flex justify-center">
             <a href="#contact-form" className="bg-[#ef7f1a] w-[345px] h-[86px] rounded-[50px] flex items-center justify-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200">
-              <span className="[font-family:'Inter',Helvetica] font-bold text-white text-2xl">
+              <span className="font-['Inter',Helvetica] font-bold text-white text-2xl">
                 Apply Now
               </span>
             </a>

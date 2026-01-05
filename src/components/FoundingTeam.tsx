@@ -31,11 +31,11 @@ export const FoundingTeam = () => {
   }, [teamMembers.length]);
 
   return (
-    <>
+    <section className="w-full">
       {/* Mobile Version */}
       <div className="block md:hidden w-full px-4 py-8 bg-slate-100">
         {/* Title */}
-        <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-3xl text-center mb-6">
+        <h2 className="font-['Inter',Helvetica] font-extrabold text-[#0e416f] text-3xl text-center mb-6">
           Founding Team
         </h2>
 
@@ -60,10 +60,10 @@ export const FoundingTeam = () => {
 
         {/* Member Info */}
         <div className="text-center mb-4 transition-all duration-500 ease-in-out">
-          <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-xl">
+          <h3 className="font-['Inter',Helvetica] font-bold text-black text-xl">
             {teamMembers[activeIndex].name}
           </h3>
-          <p className="[font-family:'Inter',Helvetica] font-normal text-black text-base mt-1">
+          <p className="font-['Inter',Helvetica] font-normal text-black text-base mt-1">
             {teamMembers[activeIndex].title}
           </p>
         </div>
@@ -77,6 +77,7 @@ export const FoundingTeam = () => {
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === activeIndex ? 'bg-[#122e6c]' : 'bg-gray-300'
               }`}
+              aria-label={`View team member ${index + 1}`}
             />
           ))}
         </div>
@@ -85,7 +86,7 @@ export const FoundingTeam = () => {
       {/* Tablet Version */}
       <div className="hidden md:block lg:hidden w-full px-6 py-12 bg-white">
         {/* Title */}
-        <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-5xl text-center mb-12">
+        <h2 className="font-['Inter',Helvetica] font-extrabold text-[#0e416f] text-5xl text-center mb-12">
           Founding Team
         </h2>
 
@@ -100,10 +101,10 @@ export const FoundingTeam = () => {
                   className="w-48 h-48 object-cover rounded-full mx-auto border-4 border-[#122e6c]"
                 />
               </div>
-              <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-2xl mb-2">
+              <h3 className="font-['Inter',Helvetica] font-bold text-black text-2xl mb-2">
                 {member.name}
               </h3>
-              <p className="[font-family:'Inter',Helvetica] font-normal text-black text-lg leading-tight">
+              <p className="font-['Inter',Helvetica] font-normal text-black text-lg leading-tight">
                 {member.title}
               </p>
             </div>
@@ -111,10 +112,10 @@ export const FoundingTeam = () => {
         </div>
       </div>
 
-      {/* Desktop Version - Original */}
-      <div className="hidden lg:block w-full py-8 bg-[#f7f7f7] relative top-[1290px]">
+      {/* Desktop Version */}
+      <div className="hidden lg:block w-full py-8 bg-[#f7f7f7]">
         <div className="max-w-[1340px] mx-auto px-[50px]">
-          <h2 className="[font-family:'Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center ">
+          <h2 className="font-['Inter',Helvetica] font-extrabold text-[#0e416f] text-4xl text-center mb-8">
             Founding Team
           </h2>
 
@@ -127,10 +128,10 @@ export const FoundingTeam = () => {
                   className="w-[358px] h-[358px] object-cover mb-6"
                 />
                 <div className="bg-[#f7f7f7] rounded-[10px] shadow-md p-6">
-                  <h3 className="[font-family:'Inter',Helvetica] font-bold text-black text-xl mb-2">
+                  <h3 className="font-['Inter',Helvetica] font-bold text-black text-xl mb-2">
                     {member.name}
                   </h3>
-                  <p className="[font-family:'Inter',Helvetica] font-normal text-black text-xl">
+                  <p className="font-['Inter',Helvetica] font-normal text-black text-xl">
                     {member.title}
                   </p>
                 </div>
@@ -139,6 +140,6 @@ export const FoundingTeam = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
