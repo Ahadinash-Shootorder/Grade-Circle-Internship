@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Index from "./pages/Index";
+import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 import TagManager from 'react-gtm-module';
 import { useEffect } from "react";
@@ -30,6 +31,7 @@ const App = () => {
             <BrowserRouter basename="/gradecircle">
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/thank-you" element={<ThankYou />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useToast } from '@/hooks/use-toast';
+import { useNavigate } from 'react-router-dom';
 
 export const ContactForm = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -128,6 +130,9 @@ export const ContactForm = () => {
           phone: '',
           message: ''
         });
+
+        // Navigate to thank-you page
+        navigate('/thank-you');
       }
     } catch (error) {
       console.error('API Error:', error);
