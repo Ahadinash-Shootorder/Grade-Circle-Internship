@@ -306,14 +306,14 @@ export const CareerStreams = () => {
       />
 
       <p className="font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-6">
-        We were pushed to go into every detail. The accountability and depth made
-        it stand out from any school project
+        Instead of just theory, we worked on realistic case studies,
+applying our learnings like in real life.
       </p>
 
       <p className="text-[#122e6c] text-xl">
-        <span className="font-bold">– Riva,</span>{" "}
+        <span className="font-bold">– Sara,</span>{" "}
         <span className="text-black">
-          Kanakia International School, Mumbai
+          Prometheus School, Noida
         </span>
       </p>
     </div>
