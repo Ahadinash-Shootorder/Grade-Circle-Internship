@@ -5,55 +5,49 @@ export const RealStories = () => {
   const sliderRef = React.useRef(null);
   const [mentorIndex, setMentorIndex] = useState(0);
   const mentorRef = React.useRef(null);
-  
 
   useEffect(() => {
-  const timer = setInterval(() => {
-    setMentorIndex(prev =>
-      prev === mentorSlides.length
- - 1 ? 0 : prev + 1
-    );
-  }, 3000);
+    const timer = setInterval(() => {
+      setMentorIndex((prev) =>
+        prev === mentorSlides.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
 
-  return () => clearInterval(timer);
-}, []);
+    return () => clearInterval(timer);
+  }, []);
 
-const chunkArray = (arr, size) => {
-  const chunks = [];
-  for (let i = 0; i < arr.length; i += size) {
-    chunks.push(arr.slice(i, i + size));
-  }
-  return chunks;
-};
-
-
-useEffect(() => {
-  const slider = mentorRef.current;
-  if (!slider) return;
-
-  let startX = 0;
-
-  const start = e => startX = e.touches[0].clientX;
-
-  const end = e => {
-    const diff = startX - e.changedTouches[0].clientX;
-    if (diff > 50)
-      setMentorIndex(i => i === mentorSlides.length
- - 1 ? 0 : i + 1);
-    if (diff < -50)
-      setMentorIndex(i => i === 0 ? mentorSlides.length
- - 1 : i - 1);
+  const chunkArray = (arr, size) => {
+    const chunks = [];
+    for (let i = 0; i < arr.length; i += size) {
+      chunks.push(arr.slice(i, i + size));
+    }
+    return chunks;
   };
 
-  slider.addEventListener("touchstart", start);
-  slider.addEventListener("touchend", end);
+  useEffect(() => {
+    const slider = mentorRef.current;
+    if (!slider) return;
 
-  return () => {
-    slider.removeEventListener("touchstart", start);
-    slider.removeEventListener("touchend", end);
-  };
-}, []);
+    let startX = 0;
 
+    const start = (e) => (startX = e.touches[0].clientX);
+
+    const end = (e) => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (diff > 50)
+        setMentorIndex((i) => (i === mentorSlides.length - 1 ? 0 : i + 1));
+      if (diff < -50)
+        setMentorIndex((i) => (i === 0 ? mentorSlides.length - 1 : i - 1));
+    };
+
+    slider.addEventListener("touchstart", start);
+    slider.addEventListener("touchend", end);
+
+    return () => {
+      slider.removeEventListener("touchstart", start);
+      slider.removeEventListener("touchend", end);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -159,41 +153,47 @@ useEffect(() => {
     {
       heading: "Learning by Doing",
       quote:
-        "Instead of just theory, we worked on realistic case studies, applying our learnings like in real life.",
-      author: "Sara",
-      school: "Prometheus School, Noida",
+        "It gave me hands-on experience in consulting– from research to pitching – something we don't get to do in a classroom.",
+      author: "Devansh",
+      school: "Overseas Family School, Singapore",
     },
     {
-      heading: "Real-World Experience",
+      heading: "Future-Ready Skillset",
       quote:
-        "The mentorship program gave me insights into corporate life that no classroom could provide.",
-      author: "Aahana",
-      school: "Lotus Valley International School, Noida",
+        "I improved critical skills – research, teamwork, and professional presentations – that apply to any career.",
+      author: "Diya",
+      school: "Indus International School, Pune",
     },
     {
-      heading: "Career Clarity",
+      heading: "Prepared for the Real World",
       quote:
-        "I now understand what different roles entail and can make informed career decisions.",
-      author: "Rahul",
-      school: "Delhi Public School, Gurgaon",
+        "This internship gave me life skills I can use beyond school – a lot of which can be implemented in real life.",
+      author: "Jaskirat",
+      school: "The British Co-Ed High School, Patiala",
     },
     {
-      heading: "Skill Development",
+      heading: "Career Exploration & Clarity",
       quote:
-        "The hands-on projects helped me develop practical skills that will be valuable in my future career.",
-      author: "Priya",
-      school: "Modern School, Delhi",
+        "GradCircle helped me clear my doubts about career options. You think something isn't for you, but after trying it, you realize it is.",
+      author: "Avni",
+      school: "St Constantine's International School, Tanzania",
     },
     {
-      heading: "Industry Connections",
+      heading: "Real Industry Exposure",
       quote:
-        "Getting mentored by professionals from top companies opened doors I never knew existed.",
-      author: "Arjun",
-      school: "St. Xavier's School, Mumbai",
+        "Corporate and international law now excite me far more than I imagined before starting this program.",
+      author: "Aviraj",
+      school: "Mahindra United World College, Pune",
+    },
+    {
+      heading: "Bridging Classroom & Career Choices",
+      quote:
+        "My interest in finance peaked here. It felt more real than just studying in class – school only teaches theory, but this showed me what the career actually involves.",
+      author: "Alisha",
+      school: "Calcutta International School, Kolkata",
     },
   ];
   const mentorSlides = chunkArray(mentors, 2);
-
 
   return (
     <section className="w-full">
@@ -205,141 +205,50 @@ useEffect(() => {
             Sample Profiles of Industry Mentors
           </h2>
 
-          {/* Mentor Cards */}
-          {/* <div className="grid grid-cols-2 gap-4 mb-6">
-            {mentors.map((mentor, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="relative">
-                  <img
-                    src={mentor.badgeImage}
-                    alt={mentor.badge}
-                    className="absolute -top-3 -left-4 w-16 h-10 rounded bg-white object-contain z-10"
-                  />
-                  <img
-                    src={mentor.image}
-                    alt={mentor.name}
-                    className="w-32 h-32"
-                  />
+          <div className="relative overflow-hidden mb-6">
+            <div
+              ref={mentorRef}
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${mentorIndex * 100}%)` }}
+            >
+              {mentorSlides.map((pair, slideIndex) => (
+                <div
+                  key={slideIndex}
+                  className="min-w-full flex justify-center"
+                >
+                  <div className="grid grid-cols-2 gap-4 w-full px-2">
+                    {pair.map((mentor, index) => (
+                      <div key={index} className="flex flex-col items-center">
+                        <div className="relative mb-3">
+                          <img
+                            src={mentor.badgeImage}
+                            alt={mentor.badge}
+                            className="absolute  -left-3 w-14 h-9 object-contain z-10 rounded"
+                          />
+
+                          <div className="w-28 h-28 rounded-full bg-[#f1a73f] overflow-hidden flex items-center justify-center">
+                            <img
+                              src={mentor.image}
+                              alt={mentor.name}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        <h3 className="font-extrabold text-[#122e6c] text-sm text-center">
+                          {mentor.name}
+                        </h3>
+
+                        <p className="text-[#122e6c] text-xs text-center leading-tight px-2">
+                          {mentor.title}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="font-['Inter',Helvetica] font-extrabold text-[#122e6c] text-sm text-center mt-2">
-                  {mentor.name}
-                </h3>
-                <p className="font-['Inter',Helvetica] font-normal text-[#122e6c] text-xs text-center">
-                  {mentor.title}
-                </p>
-              </div>
-            ))}
-          </div> */}
-
-          {/* <div className="relative overflow-hidden mb-6">
-  <div
-    ref={mentorRef}
-    className="flex transition-transform duration-500 ease-in-out"
-    style={{ transform: `translateX(-${mentorIndex * 100}%)` }}
-  >
-    {mentors.map((mentor, index) => (
-      <div key={index} className="w-full flex-shrink-0 flex justify-center">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col items-center">
-            <div className="relative">
-              <img src={mentor.badgeImage} className="absolute -top-3 -left-4 w-16 h-10 bg-white z-10" />
-              <img src={mentor.image} className="w-32 h-32" />
-            </div>
-            <h3 className="font-extrabold text-[#122e6c] text-sm text-center mt-2">{mentor.name}</h3>
-            <p className="text-[#122e6c] text-xs text-center">{mentor.title}</p>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-</div> */}
-
-<div className="relative overflow-hidden mb-6">
-
-  <div
-    ref={mentorRef}
-    className="flex transition-transform duration-500 ease-in-out"
-    style={{ transform: `translateX(-${mentorIndex * 100}%)` }}
-  >
-
-    {/* {mentors.map((mentor, index) => (
-      <div key={index} className="min-w-full flex justify-center">
-
-        <div className="flex flex-col items-center">
-
-          <div className="relative mb-3">
-            <img
-              src={mentor.badgeImage}
-              alt={mentor.badge}
-              className="absolute  -left-4 w-16 h-10 object-contain z-10 rounded"
-            />
-
-            <div className="w-36 h-36 rounded-full bg-[#f1a73f] flex items-center justify-center overflow-hidden">
-              <img
-                src={mentor.image}
-                alt={mentor.name}
-                className="w-full h-full object-cover"
-              />
+              ))}
             </div>
           </div>
-
-          <h3 className="font-extrabold text-[#122e6c] text-base text-center">
-            {mentor.name}
-          </h3>
-
-          <p className="text-[#122e6c] text-sm text-center px-4">
-            {mentor.title}
-          </p>
-
-        </div>
-
-      </div>
-    ))} */}
-
-    {mentorSlides.map((pair, slideIndex) => (
-  <div key={slideIndex} className="min-w-full flex justify-center">
-    
-    <div className="grid grid-cols-2 gap-4 w-full px-2">
-      
-      {pair.map((mentor, index) => (
-        <div key={index} className="flex flex-col items-center">
-
-          <div className="relative mb-3">
-            <img
-              src={mentor.badgeImage}
-              alt={mentor.badge}
-              className="absolute  -left-3 w-14 h-9 object-contain z-10 rounded"
-            />
-
-            <div className="w-28 h-28 rounded-full bg-[#f1a73f] overflow-hidden flex items-center justify-center">
-              <img
-                src={mentor.image}
-                alt={mentor.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <h3 className="font-extrabold text-[#122e6c] text-sm text-center">
-            {mentor.name}
-          </h3>
-
-          <p className="text-[#122e6c] text-xs text-center leading-tight px-2">
-            {mentor.title}
-          </p>
-
-        </div>
-      ))}
-
-    </div>
-  </div>
-))}
-
-
-  </div>
-</div>
-
-
 
           {/* Stats Banner */}
           <div className="bg-[#122e6c] rounded-lg p-4 flex items-center justify-center gap-4">
@@ -661,7 +570,7 @@ useEffect(() => {
 
                 {/* Heading + line */}
                 <div className="flex items-center gap-6 mb-4 px-6">
-                  <h3 className="text-black text-xl ">{item.heading}</h3>
+                  <h3 className="text-[#ef7f1a] from-neutral-500 -translate-y-4 text-2xl ">{item.heading}</h3>
                   {/* <div className="flex-1 h-[1px] bg-[#ef7f1a]" /> */}
                 </div>
 

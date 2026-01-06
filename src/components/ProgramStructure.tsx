@@ -42,18 +42,18 @@ export function ProgramStructure() {
           </ul>
 
           {/* Quote Box */}
-          <div className="mt-10 border-2 border-[#dbe3f0] rounded-xl p-4 relative">
-            <div className="relative -translate-y-8">
+          <div className="mt-10 border-2 border-[#183b73] rounded-xl p-4 relative">
+            <div className="relative -translate-y-8 -translate-x-5">
               <img
                 src="./quote.png"
                 alt="Quote"
-                className="w-[42px] h-[42px] object-contain bg-white"
+                className="w-[42px] h-[42px] object-contain bg-white "
               />
             </div>
-            <p className="text-[#f37b21] text-base leading-relaxed">
+            <p className="text-[#f37b21] text-base leading-relaxed -translate-y-4">
               We were pushed to go into every detail. The accountability and depth made it stand out from any school project
             </p>
-            <p className="mt-3 font-semibold text-[#183b73] text-sm">
+            <p className="mt-3 font-semibold text-[#183b73] text-sm -translate-y-4">
               — Riva, Kanakia International School, Mumbai
             </p>
           </div>
@@ -137,17 +137,17 @@ export function ProgramStructure() {
             </ul>
 
             {/* QUOTE BOX */}
-            <div className="mt-12 border-2 border-[#dbe3f0] rounded-xl p-6 relative">
+            <div className="mt-12 border-2 border-[#002663] rounded-xl p-6 relative">
               <img
                 src="./Blue_quote.jpg"
                 alt="quote"
                 className="absolute -top-8 -translate-x-8 w-[60px] h-[60px]"
               />
 
-              <p className="text-[#f37b21] text-lg leading-relaxed">
+              <p className="text-[#f37b21] text-lg leading-relaxed translate-x-8 translate-y-1">
                 We were pushed to go into every detail. The accountability and depth made it stand out from any school project
               </p>
-              <p className="mt-4 font-semibold text-[#183b73] text-base">
+              <p className="mt-4 font-semibold text-[#183b73] text-base translate-x-8 translate-y-1">
                 — Riva, Kanakia International School, Mumbai
               </p>
             </div>
