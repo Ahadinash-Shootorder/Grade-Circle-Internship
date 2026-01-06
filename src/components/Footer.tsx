@@ -47,7 +47,7 @@ export const Footer = () => {
         </div>
         <a 
             href="#contact-form" 
-            className="bg-[#ef7f1a] text-white font-bold text-lg py-4 w-full block text-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
+            className="bg-white text-white font-bold text-lg py-4 w-full block text-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
           >
             Apply Now
           </a>
@@ -132,7 +132,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer */}
-        <div className="bg-[#122e6c] py-12 text-center">
+        <div id="page-footer" className="bg-[#122e6c] py-12 text-center">
           <p className="text-white text-lg mb-4">
             info@mygradcircle.com | www.mygradcircle.com
           </p>
