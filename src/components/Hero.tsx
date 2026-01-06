@@ -30,53 +30,62 @@ export const Hero = () => {
   return (
     <section id="contact-form" className="relative w-full">
       {/* Mobile Layout */}
-      <div className="block md:hidden relative">
-        {/* Background */}
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover opacity-60"
-            alt="Background"
-            src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
-          />
-        </div>
+<div className="block md:hidden absolute top-0 left-0 w-full min-h-[400px] z-10">
+        {/* Bottom layer - Vector 10.png */}
+        <img
+          className="absolute bottom-0  left-0 w-full h-1/2 object-cover"
+          alt="Bottom Background"
+          src="./Vector 10.png"
+        />
+        {/* Top layer - Rectangle overlay */}
+       
+      </div>
+      
+      <div className="block md:hidden absolute left-0 w-full min-h-[400px] z-0">
+         <img
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          alt="Top Background"
+          src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
+        />
+      </div>
+
+      {/* Mobile Content */}
+      <div className="block md:hidden relative z-10 pt-20 px-5 pb-8">
         
-        {/* Content */}
-        <div className="relative z-10 pt-4 px-5 pb-8">
-          {/* Logo */}
-          <div className="flex justify-center mb-6">
-            <img
-              className="w-[200px] h-auto object-contain"
-              alt="Gradcircle"
-              src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png"
-            />
-          </div>
-          
-          {/* Title */}
-          <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] leading-[1.15] mb-5">
-            Professional Immersion<br />Internship
-          </h1>
+        {/* Title */}
+        <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] italic leading-[1.15] mb-5">
+          Professional Immersion<br />Internship
+        </h1>
 
-          {/* Subtitle */}
-          <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[16px] leading-[1.4] mb-6">
-            Industry Mentors | Professional<br />Projects | Hands-on Learning
+        {/* Subtitle with underline */}
+        <p className="text-center [font-family:'Inter',Helvetica] font-normal text-white text-[16px] leading-[1.4] mb-6 underline decoration-1 underline-offset-2">
+          Industry Mentors | Professional<br />Projects | Hands-on Learning
+        </p>
+
+        {/* Program Fee */}
+        <div className="text-center mb-5">
+          <p className="[font-family:'Inter',Helvetica] font-normal text-white text-[18px] mb-1">
+            Program Fee:
           </p>
+          <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[18px]">
+            INR <span className="text-[20px]">17,500 + 18% GST</span>
+          </p>
+        </div>
 
-          {/* Program Fee */}
-          <div className="text-center mb-5">
-            <p className="[font-family:'Inter',Helvetica] font-normal text-white text-[18px] mb-1">
-              Program Fee:
-            </p>
-            <p className="[font-family:'Inter',Helvetica] font-bold text-white text-[18px]">
-              INR <span className="text-[20px]">17,500 + 18% GST</span>
-            </p>
-          </div>
+        {/* Form Background Image - Full Width */}
+        <img
+          className="absolute left-0 right-0 w-full h-[620px] z-0"
+          alt="Form Background"
+          src="./Rectangle 57.png"
+          style={{ top: '68%', transform: 'translateY(-50%)' }}
+        />
 
-          {/* Contact Form */}
-          <div className="mt-6">
-            <ContactForm />
-          </div>
+        {/* Contact Form */}
+        <div className="mt-6 relative z-10 -mx-5">
+          <ContactForm />
         </div>
       </div>
+
 
       {/* Tablet Layout */}
       <div className="hidden md:block lg:hidden relative">

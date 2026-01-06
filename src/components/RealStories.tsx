@@ -140,8 +140,12 @@ export const RealStories = () => {
 
           <div className=" mt-9">
             {/* Quote Mark */}
-            <div className="bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none ml-1">
-              "
+            <div className="relative translate-y-8">
+              <img
+                src="./Blue_quote.jpg"
+                alt="Quote"
+                className="w-[42px] h-[42px] object-contain"
+              />
             </div>
 
             {/* Testimonial Box */}
@@ -173,10 +177,14 @@ export const RealStories = () => {
           {/* Testimonial Card */}
           <div className="relative overflow-hidden">
             {/* Quote Mark - Fixed position for all cards */}
-            <div className="absolute -top-5 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-40">
-              <span className="text-[#ef7f1a] h-[100%] text-[130px] font-['Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none">
-                "
-              </span>
+            <div className="absolute -translate-y-4 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-40">
+              <div className="relative">
+              <img
+                src="./quote.png"
+                alt="Quote"
+                className="w-[42px] h-[42px] object-contain"
+              />
+            </div>
             </div>
 
             <div
@@ -391,25 +399,25 @@ export const RealStories = () => {
               </div>
             </div>
             <div className="relative mx-auto mt-12 w-full max-w-[745px] border border-[#ef7f1a] rounded-[20px] p-10 bg-white">
+              {/* Quote image */}
+              <img
+                src="./Blue_quote.jpg"
+                alt="quote"
+                className="absolute -top-6 -left-6 w-[60px] h-[60px]"
+              />
 
-        {/* Quote image */}
-        <img
-          src="./Blue_quote.jpg"
-          alt="quote"
-          className="absolute -top-6 -left-6 w-[60px] h-[60px]"
-        />
+              <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
+                The continuity with one mentor for four weeks made it far more
+                engaging than any other program I've attended.
+              </p>
 
-        <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
-          The continuity with one mentor for four weeks made it far more engaging than any other program I've attended.
-        </p>
-
-        <p className="text-[#122e6c] text-xl">
-          <span className="font-bold">– Aahana,</span>{" "}
-          <span className="text-black">
-            Lotus Valley International School, Noida
-          </span>
-        </p>
-      </div>
+              <p className="text-[#122e6c] text-xl">
+                <span className="font-bold">– Aahana,</span>{" "}
+                <span className="text-black">
+                  Lotus Valley International School, Noida
+                </span>
+              </p>
+            </div>
           </div>
 
           {/* Real Stories Section */}
@@ -450,9 +458,7 @@ export const RealStories = () => {
             ))}
           </div>
         </div>
-        
       </div>
-      
     </section>
   );
 };

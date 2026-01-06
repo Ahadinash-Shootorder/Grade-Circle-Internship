@@ -39,7 +39,7 @@ const Index = () => {
 
       <div className="min-h-screen w-full  overflow-x-hidden">
       
-        {/* <Header /> */}
+        <Header />
         {/* Hero */}
         <Hero />
         {/* FoundedByAlumni */}

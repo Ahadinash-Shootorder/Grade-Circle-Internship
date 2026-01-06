@@ -17,11 +17,11 @@ export const Header = () => {
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png"
       />
       {/* Desktop: original position */}
-      <img
+      {/* <img
         className="hidden lg:block absolute top-[27px] left-[50px] w-[310px] h-[54px] object-cover z-20"
         alt="Gradcircle white"
         src="https://c.animaapp.com/mjmwrwbp4K97wU/img/gradcircle--white-orange-logo--png-1.png"
-      />
+      /> */} 
     </>
   );
 };
