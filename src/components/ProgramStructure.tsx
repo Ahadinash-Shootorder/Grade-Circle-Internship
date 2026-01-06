@@ -43,9 +43,13 @@ export function ProgramStructure() {
 
           {/* Quote Box */}
           <div className="mt-10 border-2 border-[#dbe3f0] rounded-xl p-4 relative">
-            <span className="absolute -top-6 left-2 font-['Kannada_Sangam_MN-Regular',Helvetica] text-[#183b73] text-6xl">
-              "
-            </span>
+            <div className="relative -translate-y-8">
+              <img
+                src="./quote.png"
+                alt="Quote"
+                className="w-[42px] h-[42px] object-contain"
+              />
+            </div>
             <p className="text-[#f37b21] text-base leading-relaxed">
               We were pushed to go into every detail. The accountability and depth made it stand out from any school project
             </p>

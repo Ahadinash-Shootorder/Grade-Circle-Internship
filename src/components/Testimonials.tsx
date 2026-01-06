@@ -13,9 +13,13 @@ export const Testimonials = () => {
         {/* Testimonial Card */}
         <div className="relative">
           {/* Quote Mark */}
-          <div className="absolute -top-6 bg-white h-[40px] -left-4 text-[#122e6c] text-[130px] [font-family:'Kannada_Sangam_MN-Regular',Helvetica] font-bold leading-none  ml-1">
-             “
-          </div>
+         <div className="relative translate-y-8">
+              <img
+                src="./Blue_quote.jpg"
+                alt="Quote"
+                className="w-[42px] h-[42px] object-contain"
+              />
+            </div>
           
           {/* Testimonial Box */}
           <div className="border-2 border-[#122e6c] rounded-2xl p-6 shadow-sm bg-white">

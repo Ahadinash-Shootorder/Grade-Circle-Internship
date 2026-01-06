@@ -26,12 +26,7 @@ export const Footer = () => {
           />
 
           {/* Apply Now Button */}
-          <a 
-            href="#contact-form" 
-            className="bg-[#ef7f1a] text-white font-bold text-lg py-4 w-full block text-center rounded-lg hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
-          >
-            Apply Now
-          </a>
+          
         </div>
 
         {/* Footer */}
@@ -50,6 +45,12 @@ export const Footer = () => {
             © Copyright GradCircle, All rights reserved 2025.
           </p>
         </div>
+        <a 
+            href="#contact-form" 
+            className="bg-[#ef7f1a] text-white font-bold text-lg py-4 w-full block text-center hover:bg-[#d66f15] active:bg-[#c06312] transition-all duration-200 shadow-md hover:shadow-lg"
+          >
+            Apply Now
+          </a>
       </div>
 
       {/* Tablet Version */}
