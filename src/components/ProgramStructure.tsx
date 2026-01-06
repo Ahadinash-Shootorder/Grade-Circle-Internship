@@ -141,7 +141,7 @@ export function ProgramStructure() {
               <img
                 src="./Blue_quote.jpg"
                 alt="quote"
-                className="absolute -top-8 left-2 w-[60px] h-[60px]"
+                className="absolute -top-8 -translate-x-8 w-[60px] h-[60px]"
               />
 
               <p className="text-[#f37b21] text-lg leading-relaxed">

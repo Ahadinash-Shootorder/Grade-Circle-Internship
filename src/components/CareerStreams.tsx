@@ -137,7 +137,7 @@ export const CareerStreams = () => {
   },
   {
     title: "Pharma/Healthcare",
-    description: "Strategy Consultant,\nBusiness Analyst",
+    description: "Medical Practitioner, Healthcare Administrator, Program Manager",
     logos: [
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png", alt: "Novartis" },
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png", alt: "AG" },
@@ -146,7 +146,7 @@ export const CareerStreams = () => {
   },
   {
     title: "Legal",
-    description: "Product Manager, AI Researcher,\nSoftware Architect",
+    description: "Corporate Lawyer, Legal Consultant, Advocate",
     logos: [
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png", alt: "ACM" },
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png", alt: "Fox Mandal" },
@@ -154,7 +154,7 @@ export const CareerStreams = () => {
   },
   {
     title: "Media and Journalism",
-    description: "Investment Banker,\nFinancial Analyst, Auditor",
+    description: "Content Strategist, Journalist, Public Relations (PR)",
     logos: [
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png", alt: "Indian Express" },
       { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png", alt: "Adsfactor PR" },
