@@ -1,55 +1,109 @@
-import React from 'react';
+import React from "react";
 
 export const CareerStreams = () => {
   const careerData = [
     {
       title: "Business & Consulting",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png", alt: "McKinsey" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png", alt: "BCG" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png", alt: "PWC" }
-      ]
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png",
+          alt: "McKinsey",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png",
+          alt: "BCG",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png",
+          alt: "PWC",
+        },
+      ],
     },
     {
       title: "Technology",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png", alt: "Amazon" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png", alt: "Google" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png", alt: "Oracle" }
-      ]
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png",
+          alt: "Amazon",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png",
+          alt: "Google",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png",
+          alt: "Oracle",
+        },
+      ],
     },
     {
       title: "Finance",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png", alt: "JP Morgan" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png", alt: "KPMG" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png", alt: "Barclays" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png", alt: "EY" }
-      ]
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png",
+          alt: "JP Morgan",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png",
+          alt: "KPMG",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png",
+          alt: "Barclays",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png",
+          alt: "EY",
+        },
+      ],
     },
     {
       title: "Pharma/Healthcare",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png", alt: "Novartis" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png", alt: "AG" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png", alt: "Bristol Myers" }
-      ]
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png",
+          alt: "Novartis",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png",
+          alt: "AG",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png",
+          alt: "Bristol Myers",
+        },
+      ],
     },
     {
       title: "Legal",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png", alt: "ACM" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png", alt: "Fox Mandal" }
-      ]
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png",
+          alt: "ACM",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png",
+          alt: "Fox Mandal",
+        },
+      ],
     },
     {
       title: "Media and Journalism",
       logos: [
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png", alt: "Indian Express" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png", alt: "Adsfactor PR" },
-        { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png", alt: "CNN News" }
-      ]
-    }
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png",
+          alt: "Indian Express",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png",
+          alt: "Adsfactor PR",
+        },
+        {
+          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png",
+          alt: "CNN News",
+        },
+      ],
+    },
   ];
 
   return (
@@ -59,7 +113,8 @@ export const CareerStreams = () => {
         {/* Title */}
         <div className="px-4 mb-8">
           <h2 className="[font-family:'Inter',Helvetica] font-bold text-[#122e6c] text-3xl text-center leading-tight">
-            Sample Career Streams &<br />Mentor Backgrounds
+            Sample Career Streams &<br />
+            Mentor Backgrounds
           </h2>
         </div>
 
@@ -73,7 +128,7 @@ export const CareerStreams = () => {
                   {stream.title}
                 </span>
               </div>
-              
+
               {/* Logos */}
               <div className="bg-white py-2 px-1 flex items-center justify-around flex-wrap gap-4">
                 {stream.logos.map((logo, logoIndex) => (
@@ -109,7 +164,7 @@ export const CareerStreams = () => {
                   {stream.title}
                 </span>
               </div>
-              
+
               {/* Logos */}
               <div className="bg-white py-8 px-6 flex items-center justify-center flex-wrap gap-6">
                 {stream.logos.map((logo, logoIndex) => (
@@ -128,73 +183,84 @@ export const CareerStreams = () => {
 
       {/* Desktop Version - Original */}
       {/* ================== CAREER STREAMS ================== */}
-<div className="hidden lg:flex justify-center w-full relative">
-  <div className="relative w-[1440px] origin-top scale-[0.88] xl:scale-[0.95] 2xl:scale-100 transition-transform duration-300">
+     {/* ================= DESKTOP VERSION ================= */}
+<div className="hidden lg:block bg-[#f7f7f7] py-12 -translate-y-32">
+  <div className="max-w-[1340px] mx-auto px-12">
 
-{/* ================== CAREER STREAMS ================== */}
-<div className="w-full py-12 bg-white relative -top-[170px]">
-  <div className="max-w-[1340px] mx-auto px-[50px] border border-[#122e6c] rounded-md py-4">
-
-    <h2 className="font-bold text-[#122e6c] text-4xl text-center mb-10 relative -top-16 bg-white">
-      Sample Career Streams &<br />Mentor Backgrounds
+    {/* TITLE */}
+    <h2 className="font-bold text-[#122e6c] text-5xl text-center mb-20">
+      Sample Career Streams &<br />
+      Mentor Backgrounds
     </h2>
 
-    <div className="border border-[#122e6c] rounded-[10px] overflow-hidden">
-      {careerData.map((stream, index) => (
-        <div key={index} className="flex items-stretch border-b border-[#122e6c] last:border-b-0">
+    {/* TABLE */}
+    <div className="bg-white rounded-xl shadow-md overflow-hidden">
 
-          <div className="bg-[#122e6c] py-5 px-6 w-[200px] flex items-center">
-            <span className="font-bold text-white text-lg">
+      {careerData.map((stream, index) => (
+        <div
+          key={index}
+          className="flex items-stretch border-b last:border-b-0 border-[#122e6c]"
+        >
+
+          {/* LEFT TITLE */}
+          <div className="bg-[#122e6c] w-[230px] border-b last:border-b-0 border-white flex items-center justify-center text-center p-6">
+            <span className="font-bold text-white text-2xl leading-tight">
               {stream.title}
             </span>
           </div>
 
-          <div className="bg-[#e8e8e8] py-5 px-6 w-[350px] flex items-center">
-            <p className="text-black text-lg">
-              {stream.description}
+          {/* MIDDLE DESCRIPTION */}
+          <div className="bg-[#e8e8e8] w-[360px] flex items-center p-6">
+            <p className="text-black text-xl leading-relaxed">
+              Industry-aligned roles and mentor expertise for real-world exposure
             </p>
           </div>
 
-          <div className="bg-white flex items-center gap-6 flex-1 justify-center py-4 px-6">
+          {/* RIGHT LOGOS */}
+          <div className="flex-1 bg-white flex items-center justify-center gap-10 p-6 flex-wrap">
             {stream.logos.map((logo, i) => (
-              <img key={i} className="h-16 max-w-[100px] object-contain" src={logo.src} alt={logo.alt} />
+              <img
+                key={i}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-[90px] max-w-[140px] object-contain"
+              />
             ))}
           </div>
 
         </div>
       ))}
+
     </div>
 
-    <p className="font-bold text-[#ef7f1a] text-3xl text-center mt-10 py-3">
+    {/* FOOTER STATS */}
+    <p className="font-bold text-[#ef7f1a] text-3xl text-center mt-16">
       100+ Mentors | 20+ Career Pathways
     </p>
-  </div>
-  
-  <div className="relative mx-auto w-full max-w-[745px] translate-y-16 border border-[#ef7f1a] rounded-[20px] p-10 bg-white">
 
-  <img
-    src="./Blue_quote.jpg"
-    alt="quote"
-    className="absolute -top-6 -left-6 w-[60px] h-[60px]"
-  />
+    {/* QUOTE CARD */}
+    <div className="relative mt-20 max-w-[780px] mx-auto bg-white border border-[#ef7f1a] rounded-[20px] p-12 shadow-lg">
 
-  <p className="font-['Montserrat',Helvetica] font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-4">
-    We were pushed to go into every detail. The accountability and depth
-    made it stand out from any school project
-  </p>
+      <img
+        src="./Blue_quote.jpg"
+        alt="quote"
+        className="absolute -top-6 -left-6 w-[60px] h-[60px]"
+      />
 
-  <p className="text-[#122e6c] text-xl">
-    <span className="font-bold">– Riva,</span>{" "}
-    <span className="text-black">Kanakia International School, Mumbai</span>
-  </p>
-</div>
-</div>
+      <p className="font-semibold italic text-[#f36a1e] text-2xl leading-relaxed mb-6">
+        We were pushed to go into every detail. The accountability and depth made
+        it stand out from any school project
+      </p>
 
-
-
+      <p className="text-[#122e6c] text-xl">
+        <span className="font-bold">– Riva,</span>{" "}
+        <span className="text-black">
+          Kanakia International School, Mumbai
+        </span>
+      </p>
+    </div>
   </div>
 </div>
-
 
     </>
   );
