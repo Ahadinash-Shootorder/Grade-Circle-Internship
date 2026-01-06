@@ -52,7 +52,7 @@ export function SampleProjects() {
           <ul className="space-y-4">
             {projects.map((item, i) => (
               <li key={i} className="flex items-start gap-4">
-                <span className="mt-1 w-6 h-6 bg-[#ef7f1a] text-white flex items-center justify-center rounded-full text-sm">
+                <span className="mt-1 w-5 h-5 bg-[#ef7f1a] text-white flex items-center justify-center rounded-full text-sm">
                   ✓
                 </span>
                 <p className="text-lg">

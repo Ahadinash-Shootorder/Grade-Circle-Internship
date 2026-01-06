@@ -1,7 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const RealStories = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const sliderRef = React.useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) =>
+        prev === testimonials.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    let startX = 0;
+
+    const touchStart = (e) => {
+      startX = e.touches[0].clientX;
+    };
+
+    const touchEnd = (e) => {
+      const diff = startX - e.changedTouches[0].clientX;
+
+      if (diff > 50) {
+        setActiveIndex((prev) =>
+          prev === testimonials.length - 1 ? 0 : prev + 1
+        );
+      } else if (diff < -50) {
+        setActiveIndex((prev) =>
+          prev === 0 ? testimonials.length - 1 : prev - 1
+        );
+      }
+    };
+
+    slider.addEventListener("touchstart", touchStart);
+    slider.addEventListener("touchend", touchEnd);
+
+    return () => {
+      slider.removeEventListener("touchstart", touchStart);
+      slider.removeEventListener("touchend", touchEnd);
+    };
+  }, []);
 
   const mentors = [
     {
@@ -179,16 +223,17 @@ export const RealStories = () => {
             {/* Quote Mark - Fixed position for all cards */}
             <div className="absolute -translate-y-4 -left-4 bg-white h-[80px] w-[80px] flex items-center justify-center pt-4 z-40">
               <div className="relative">
-              <img
-                src="./quote.png"
-                alt="Quote"
-                className="w-[42px] h-[42px] object-contain"
-              />
-            </div>
+                <img
+                  src="./quote.png"
+                  alt="Quote"
+                  className="w-[42px] h-[42px] object-contain"
+                />
+              </div>
             </div>
 
             <div
-              className="flex transition-transform duration-300 ease-in-out"
+              ref={sliderRef}
+              className="flex transition-transform duration-500 ease-in-out touch-pan-x"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               {testimonials.map((testimonial, index) => (
@@ -435,7 +480,7 @@ export const RealStories = () => {
                 <img
                   src="./quote.png"
                   alt="quote"
-                  className="absolute -top-6 -left-6 w-[80px] h-[80px]"
+                  className="absolute -top-6 -left-6 w-[80px] h-[80px] bg-white"
                 />
 
                 {/* Heading + line */}

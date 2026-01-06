@@ -8,41 +8,48 @@ export const Hero = () => {
   useEffect(() => {
     const handleScroll = () => {
       const formSection = document.getElementById('contact-form');
-      const footerSection = document.getElementById('mobile-footer');
       
-      if (formSection && footerSection) {
+      if (formSection) {
         const formRect = formSection.getBoundingClientRect();
-        const footerRect = footerSection.getBoundingClientRect();
-        
         const isFormVisible = formRect.top < window.innerHeight && formRect.bottom > 0;
-        const isFooterVisible = footerRect.top < window.innerHeight && footerRect.bottom > 0;
         
-        setShowFloatingButton(!isFormVisible && !isFooterVisible);
+        // Show button when form is NOT visible and user has scrolled down
+        const shouldShow = !isFormVisible && window.scrollY > 300;
+        setShowFloatingButton(shouldShow);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    // Initial check
     handleScroll();
-
+    
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll);
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const formSection = document.getElementById('contact-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
     <section id="contact-form" className="relative w-full">
       {/* Mobile Layout */}
-<div className="block md:hidden absolute top-0 left-0 w-full min-h-[400px] z-10">
+      <div className="block md:hidden absolute top-0 left-0 w-full min-h-[400px] z-10">
         {/* Bottom layer - Vector 10.png */}
         <img
-          className="absolute bottom-0  left-0 w-full h-1/2 object-cover"
+          className="absolute bottom-0 left-0 w-full h-1/2 object-cover"
           alt="Bottom Background"
           src="./Vector 10.png"
         />
-        {/* Top layer - Rectangle overlay */}
-       
       </div>
       
       <div className="block md:hidden absolute left-0 w-full min-h-[400px] z-0">
-         <img
+        <img
           className="absolute top-0 left-0 w-full h-full object-cover"
           alt="Top Background"
           src="https://c.animaapp.com/mjmwrwbp4K97wU/img/rectangle-1.svg"
@@ -51,7 +58,6 @@ export const Hero = () => {
 
       {/* Mobile Content */}
       <div className="block md:hidden relative z-10 pt-20 px-5 pb-8">
-        
         {/* Title */}
         <h1 className="text-center [font-family:'Inter',Helvetica] font-bold text-white text-[32px] italic leading-[1.15] mb-5">
           Professional Immersion<br />Internship
@@ -86,7 +92,6 @@ export const Hero = () => {
         </div>
       </div>
 
-
       {/* Tablet Layout */}
       <div className="hidden md:block lg:hidden relative">
         <div className="w-full min-h-[700px] bg-gradient-to-b from-[#ef7f1a] to-[#d66a0a] relative overflow-hidden py-12">
@@ -107,10 +112,12 @@ export const Hero = () => {
             <h1 className="[font-family:'Inter',Helvetica] font-bold text-white text-5xl italic leading-tight mb-6">
               Professional Immersion<br /> Internship
             </h1>
+            
             {/* Subtitle */}
             <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-8 underline decoration-1 underline-offset-4">
               Industry Mentors | Professional Projects | Hands-on Learning
             </p>
+            
             {/* Program Fee */}
             <div className="mb-6">
               <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-2">
@@ -120,10 +127,12 @@ export const Hero = () => {
                 INR <span className="text-4xl">17,500 + 18% GST</span>
               </p>
             </div>
+            
             {/* Next Cohorts */}
             <p className="[font-family:'Inter',Helvetica] font-normal text-white text-xl mb-10">
               Next Cohorts Starting: <span className="font-bold">Jan & Feb</span> (Weekends)
             </p>
+            
             {/* Contact Form */}
             <div className="w-full max-w-lg">
               <ContactForm />
@@ -131,9 +140,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Desktop Layout */}
-      
 
       {/* Desktop Layout */}
       <div className="hidden lg:block relative">
@@ -194,14 +200,12 @@ export const Hero = () => {
       </div>
 
       {/* Floating Apply Now Button - Mobile Only */}
-      {showFloatingButton && (
-        <a
+      <a
           href="#contact-form"
-          className="block md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#ef7f1a] text-white font-bold text-lg py-4 w-full text-center shadow-lg hover:bg-[#d66f15] active:bg-[#c06312]"
+          className="block md:hidden fixed bottom-0  z-50 bg-[#ef7f1a] w-full text-center h-16 text-white font-bold text-lg py-4 px-8 shadow-lg hover:bg-[#d66f15] active:bg-[#c06312]"
         >
           Apply Now
         </a>
-      )}
     </section>
   );
 };

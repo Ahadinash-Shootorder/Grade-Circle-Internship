@@ -36,9 +36,9 @@ export const Footer = () => {
           </p>
           
           <div className="text-white text-sm mb-6">
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/terms-and-conditions" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
             <span className="mx-3">|</span>
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/privacy-and-policy" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
           </div>
           
           <p className="text-white/70 text-xs">
@@ -92,9 +92,9 @@ export const Footer = () => {
           </p>
           
           <div className="text-white text-base mb-6">
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/terms-and-conditions" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
             <span className="mx-4">|</span>
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/privacy-and-policy" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
           </div>
           
           <p className="text-white/70 text-sm">
@@ -138,9 +138,9 @@ export const Footer = () => {
           </p>
           
           <div className="text-white text-base mb-6">
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/terms-and-conditions" className="underline hover:text-[#ef7f1a] transition-colors">Terms of Use</a>
             <span className="mx-4">|</span>
-            <a href="#" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
+            <a href="https://mygradcircle-mitinnovate.assessli.com/privacy-and-policy" className="underline hover:text-[#ef7f1a] transition-colors">Privacy Notice</a>
           </div>
           
           <p className="text-white/70 text-sm">

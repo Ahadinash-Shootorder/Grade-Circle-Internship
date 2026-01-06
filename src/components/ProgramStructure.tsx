@@ -47,7 +47,7 @@ export function ProgramStructure() {
               <img
                 src="./quote.png"
                 alt="Quote"
-                className="w-[42px] h-[42px] object-contain"
+                className="w-[42px] h-[42px] object-contain bg-white"
               />
             </div>
             <p className="text-[#f37b21] text-base leading-relaxed">

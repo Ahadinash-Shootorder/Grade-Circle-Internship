@@ -1,110 +1,167 @@
 import React from "react";
 
 export const CareerStreams = () => {
+  // const careerData = [
+  //   {
+  //     title: "Business & Consulting",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png",
+  //         alt: "McKinsey",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png",
+  //         alt: "BCG",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png",
+  //         alt: "PWC",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Technology",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png",
+  //         alt: "Amazon",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png",
+  //         alt: "Google",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png",
+  //         alt: "Oracle",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Finance",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png",
+  //         alt: "JP Morgan",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png",
+  //         alt: "KPMG",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png",
+  //         alt: "Barclays",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png",
+  //         alt: "EY",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Pharma/Healthcare",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png",
+  //         alt: "Novartis",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png",
+  //         alt: "AG",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png",
+  //         alt: "Bristol Myers",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Legal",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png",
+  //         alt: "ACM",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png",
+  //         alt: "Fox Mandal",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "Media and Journalism",
+  //     logos: [
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png",
+  //         alt: "Indian Express",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png",
+  //         alt: "Adsfactor PR",
+  //       },
+  //       {
+  //         src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png",
+  //         alt: "CNN News",
+  //       },
+  //     ],
+  //   },
+  // ];
+
   const careerData = [
-    {
-      title: "Business & Consulting",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png",
-          alt: "McKinsey",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png",
-          alt: "BCG",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png",
-          alt: "PWC",
-        },
-      ],
-    },
-    {
-      title: "Technology",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png",
-          alt: "Amazon",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png",
-          alt: "Google",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png",
-          alt: "Oracle",
-        },
-      ],
-    },
-    {
-      title: "Finance",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png",
-          alt: "JP Morgan",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png",
-          alt: "KPMG",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png",
-          alt: "Barclays",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png",
-          alt: "EY",
-        },
-      ],
-    },
-    {
-      title: "Pharma/Healthcare",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png",
-          alt: "Novartis",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png",
-          alt: "AG",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png",
-          alt: "Bristol Myers",
-        },
-      ],
-    },
-    {
-      title: "Legal",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png",
-          alt: "ACM",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png",
-          alt: "Fox Mandal",
-        },
-      ],
-    },
-    {
-      title: "Media and Journalism",
-      logos: [
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png",
-          alt: "Indian Express",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png",
-          alt: "Adsfactor PR",
-        },
-        {
-          src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png",
-          alt: "CNN News",
-        },
-      ],
-    },
-  ];
+  {
+    title: "Business & Consulting",
+    description: "Strategy Consultant,\nBusiness Analyst",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/mc-kinsey-logo-1.png", alt: "McKinsey" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bcg-logo-1.png", alt: "BCG" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/pwc-logo-1.png", alt: "PWC" },
+    ],
+  },
+  {
+    title: "Technology",
+    description: "Product Manager, AI Researcher,\nSoftware Architect",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/amazon-logo.png", alt: "Amazon" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/google-logo.png", alt: "Google" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/oracle-logo.png", alt: "Oracle" },
+    ],
+  },
+  {
+    title: "Finance",
+    description: "Investment Banker,\nFinancial Analyst, Auditor",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/jp-morgan-logo.png", alt: "JP Morgan" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/kpmg-logo.png", alt: "KPMG" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/barclays-logo.png", alt: "Barclays" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ey-logo.png", alt: "EY" },
+    ],
+  },
+  {
+    title: "Pharma/Healthcare",
+    description: "Strategy Consultant,\nBusiness Analyst",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/novartis-logo-1.png", alt: "Novartis" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/ag-logo-1.png", alt: "AG" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/bristol-myers-logo-1.png", alt: "Bristol Myers" },
+    ],
+  },
+  {
+    title: "Legal",
+    description: "Product Manager, AI Researcher,\nSoftware Architect",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/acm-logo.png", alt: "ACM" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/fox-mandal-logo.png", alt: "Fox Mandal" },
+    ],
+  },
+  {
+    title: "Media and Journalism",
+    description: "Investment Banker,\nFinancial Analyst, Auditor",
+    logos: [
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/indian-express-logo.png", alt: "Indian Express" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/adsfactor-pr-logo.png", alt: "Adsfactor PR" },
+      { src: "https://c.animaapp.com/mjmwrwbp4K97wU/img/cnn-news-18-logo.png", alt: "CNN News" },
+    ],
+  },
+];
 
   return (
     <>
@@ -211,9 +268,10 @@ export const CareerStreams = () => {
 
           {/* MIDDLE DESCRIPTION */}
           <div className="bg-[#e8e8e8] w-[360px] flex items-center p-6">
-            <p className="text-black text-xl leading-relaxed">
-              Industry-aligned roles and mentor expertise for real-world exposure
-            </p>
+            <p className="text-black text-xl">
+  {stream.description}
+</p>
+
           </div>
 
           {/* RIGHT LOGOS */}
